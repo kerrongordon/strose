@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="blog m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -25,7 +25,7 @@
 								</header>
 
 								<section class="entry-content cf">
-									<?php the_content(); ?>
+									<?php the_excerpt(); ?>
 								</section>
 
 								<footer class="article-footer cf">
@@ -66,7 +66,6 @@
 
 						</main>
 
-					<?php get_sidebar(); ?>
 
 				</div>
 

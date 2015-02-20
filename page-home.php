@@ -33,5 +33,5 @@
 
 			</div>
 
-
+<?php get_sidebar( "subscriptions" ); ?>
 <?php get_footer(); ?>

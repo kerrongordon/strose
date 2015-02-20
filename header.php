@@ -75,3 +75,18 @@
 				</div>
 
 			</header>
+
+			<div class="subscriptions m-all cf">
+
+				<div class="wrap cf">
+
+					<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+					    <?php if(function_exists('bcn_display'))
+					    echo "<strong>You are here:</strong> ";{
+					        bcn_display();
+					    }?>
+					</div>
+
+				</div>
+
+			</div>

@@ -194,6 +194,16 @@ function bones_register_sidebars() {
     'after_title' => '</h4>',
   ));
 
+  register_sidebar(array(
+    'id' => 'subscriptions',
+    'name' => __( 'Home page subscriptions', 'strose' ),
+    'description' => __( 'The footer-bar sidebar.', 'strose' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4 class="">',
+    'after_title' => '</h4>',
+  ));
+
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call
@@ -270,6 +280,7 @@ and be up and running in seconds.
 */
 function bones_fonts() {
   wp_enqueue_style('googleFonts', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic');
+  wp_enqueue_style('SatisfyFonts', 'http://fonts.googleapis.com/css?family=Satisfy');
 }
 
 add_action('wp_enqueue_scripts', 'bones_fonts');

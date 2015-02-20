@@ -154,7 +154,7 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $black;
+	background-color: $header-color;
 }
 
 	#logo {
@@ -253,7 +253,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 1.5em;
+	margin: 1.5em;
 }
 
 		.hentry {
@@ -921,3 +921,38 @@ HOME PAGE
 		}
 	}
 }
+
+/**********************
+subscriptions
+**********************/
+
+.subscriptions {
+	background-color: $subscriptions-color;
+	color: $subscriptions-font-color;
+	text-align: center;
+
+	h2 {
+		font-weight: 400;
+		font-family: "Satisfy";
+		font-size: 2em;
+	}
+}
+
+.breadcrumbs {
+	margin: 2em;
+	text-align: left;
+
+	a:visited {
+		color: $footerbar-font-color;
+	}
+}
+
+/**********************
+blog
+**********************/
+
+.blog {
+	margin: 0 auto;
+	float: none;
+}
+

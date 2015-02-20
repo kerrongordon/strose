@@ -1346,6 +1346,7 @@ select {
 }
 .footerbar .widget {
   float: left;
+  padding: 0 10px;
 }
 .footerbar .widget .widgettitle {
   border: none;
@@ -1506,7 +1507,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944;
+  background-color: #34495e;
 }
 
 #logo {
@@ -1564,7 +1565,7 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 1.5em;
+  margin: 1.5em;
 }
 
 .hentry {
@@ -1991,6 +1992,36 @@ HOME PAGE
   font-size: 14px;
 }
 
+/**********************
+subscriptions
+**********************/
+.subscriptions {
+  background-color: #1abc9c;
+  color: #fff;
+  text-align: center;
+}
+.subscriptions h2 {
+  font-weight: 400;
+  font-family: "Satisfy";
+  font-size: 2em;
+}
+
+.breadcrumbs {
+  margin: 2em;
+  text-align: left;
+}
+.breadcrumbs a:visited {
+  color: #ccc;
+}
+
+/**********************
+blog
+**********************/
+.blog {
+  margin: 0 auto;
+  float: none;
+}
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -2145,7 +2176,7 @@ you can add resource intensive styles.
     /* end current highlighters */
   }
   .nav ul {
-    background: #323944;
+    background: #34495e;
     margin-top: 0;
   }
   .nav li {
@@ -2170,7 +2201,7 @@ you can add resource intensive styles.
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
-    border: 1px solid #ccc;
+    border: 1px solid #34495e;
     border-top: 0;
     position: absolute;
     visibility: hidden;
@@ -2191,7 +2222,7 @@ you can add resource intensive styles.
     border-right: 0;
     display: block;
     width: 180px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #34495e;
   }
   .nav li ul.sub-menu li:last-child a,
   .nav li ul.children li:last-child a {
