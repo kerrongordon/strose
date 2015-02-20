@@ -1,0 +1,13 @@
+.footerbar {
+	background-color: $footerbar-color;
+	width: 100%;
+	color: $footerbar-font-color;
+
+	.widget {
+		float: left;
+
+		.widgettitle {
+			border: none;
+		}
+	}
+}

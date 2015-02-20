@@ -1,0 +1,36 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+  width: 1040px;
+}
+
+.homepagemain {
+
+	.widget:nth-child(2), .widget:nth-child(3) {
+		width: 50%;
+		float: left;
+		text-align: left;
+
+		img {
+			float: left;
+			border-radius: 50%;
+		}
+
+		p {
+			float: right;
+			display: inline;
+			margin: 0;
+			width: 60%;
+			font-size: 14px;
+		}
+	}
+}
