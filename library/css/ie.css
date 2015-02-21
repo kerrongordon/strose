@@ -442,6 +442,16 @@ HOME PAGE
   font-size: 14px;
 }
 
+#inner-header #logo {
+  float: left;
+  text-align: left;
+}
+#inner-header nav {
+  float: right;
+  margin: 2em 0;
+  display: block;
+}
+
 /******************************************************************
 Site Name:
 Author:

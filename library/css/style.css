@@ -1353,11 +1353,12 @@ select {
 }
 
 #inner-header #logo {
-  float: left;
+  text-align: center;
 }
 #inner-header nav {
   float: right;
   margin: 2em 0;
+  display: none;
 }
 
 /*********************
@@ -2314,6 +2315,16 @@ you can add resource intensive styles.
     margin: 10px 0;
     width: 100%;
     font-size: 14px;
+  }
+
+  #inner-header #logo {
+    float: left;
+    text-align: left;
+  }
+  #inner-header nav {
+    float: right;
+    margin: 2em 0;
+    display: block;
   }
 }
 /*********************

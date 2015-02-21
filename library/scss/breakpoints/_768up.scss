@@ -316,3 +316,17 @@ HOME PAGE
 		}
 	}
 }
+
+#inner-header {
+
+	#logo {
+		float: left;
+		text-align: left;
+	}
+
+	nav {
+		float: right;
+		margin: 2em 0;
+		display: block;
+	}
+}

@@ -1,12 +1,14 @@
 #inner-header {
 
 	#logo {
-		float: left;
+		//float: left;
+		text-align: center;
 	}
 
 	nav {
 		float: right;
 		margin: 2em 0;
+		display: none;
 	}
 }
 
