@@ -299,20 +299,11 @@ HOME PAGE
 
 	.widget:nth-child(2), .widget:nth-child(3) {
 		width: 50%;
-		float: left;
 		text-align: left;
 
-		img {
-			float: left;
-			border-radius: 50%;
-		}
-
 		p {
-			float: right;
-			display: inline;
 			margin: 10px 0;
 			width: 100%;
-			font-size: 14px;
 		}
 	}
 }
@@ -329,4 +320,9 @@ HOME PAGE
 		margin: 2em 0;
 		display: block;
 	}
+}
+
+.fimg {
+	background-image: url(../images/strose-all-cuts.png);
+	background-size: inherit;
 }

@@ -200,8 +200,8 @@ function bones_register_sidebars() {
     'description' => __( 'The footer-bar sidebar.', 'strose' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="">',
-    'after_title' => '</h4>',
+    'before_title' => '<h2 class="">&#8220',
+    'after_title' => '&#8221</h2>',
   ));
 
 	/*
@@ -293,3 +293,5 @@ add_action('wp_enqueue_scripts', 'bones_fonts');
 	) );
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
+
+

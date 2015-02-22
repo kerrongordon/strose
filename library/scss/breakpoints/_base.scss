@@ -907,19 +907,18 @@ HOME PAGE
 		float: left;
 		text-align: center;
 
-		img {
-			//float: left;
-			border-radius: 50%;
-		}
-
 		p {
-			//float: right;
-			//display: inline;
-			//margin: 0;
-			//width: 60%;
 			font-size: 14px;
 		}
 	}
+}
+
+.fimg {
+	background-image: url(../images/strose-all-cuts-moble.png);
+	background-repeat: repeat-x;
+	height: 350px;
+	margin: 0 auto;
+	background-size: cover;
 }
 
 /**********************
@@ -956,3 +955,14 @@ blog
 	float: none;
 }
 
+/*******************
+contact form 7
+*******************/
+
+.wpcf7-text {
+	max-width: 100% !important;
+}
+
+.wpcf7-submit {
+	@extend .comment-reply-link;
+}

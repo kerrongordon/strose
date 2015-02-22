@@ -254,17 +254,6 @@ HOME PAGE
   float: left;
   text-align: left;
 }
-.homepagemain .widget:nth-child(2) img, .homepagemain .widget:nth-child(3) img {
-  float: left;
-  border-radius: 50%;
-}
-.homepagemain .widget:nth-child(2) p, .homepagemain .widget:nth-child(3) p {
-  float: right;
-  display: inline;
-  margin: 0;
-  width: 70%;
-  font-size: 14px;
-}
 
 /******************************************************************
 Site Name:
@@ -427,19 +416,11 @@ HOME PAGE
 *************************/
 .homepagemain .widget:nth-child(2), .homepagemain .widget:nth-child(3) {
   width: 50%;
-  float: left;
   text-align: left;
 }
-.homepagemain .widget:nth-child(2) img, .homepagemain .widget:nth-child(3) img {
-  float: left;
-  border-radius: 50%;
-}
 .homepagemain .widget:nth-child(2) p, .homepagemain .widget:nth-child(3) p {
-  float: right;
-  display: inline;
   margin: 10px 0;
   width: 100%;
-  font-size: 14px;
 }
 
 #inner-header #logo {
@@ -450,6 +431,11 @@ HOME PAGE
   float: right;
   margin: 2em 0;
   display: block;
+}
+
+.fimg {
+  background-image: url(../images/strose-all-cuts.png);
+  background-size: inherit;
 }
 
 /******************************************************************
@@ -463,24 +449,7 @@ be seen on the Desktop.
 
 ******************************************************************/
 .wrap {
-  width: 1040px;
-}
-
-.homepagemain .widget:nth-child(2), .homepagemain .widget:nth-child(3) {
-  width: 50%;
-  float: left;
-  text-align: left;
-}
-.homepagemain .widget:nth-child(2) img, .homepagemain .widget:nth-child(3) img {
-  float: left;
-  border-radius: 50%;
-}
-.homepagemain .widget:nth-child(2) p, .homepagemain .widget:nth-child(3) p {
-  float: right;
-  display: inline;
-  margin: 0;
-  width: 60%;
-  font-size: 14px;
+  width: 1200px;
 }
 
 /*
