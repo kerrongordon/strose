@@ -448,10 +448,6 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-.wrap {
-  width: 1200px;
-}
-
 /*
 you can call the larger styles if you want, but there's really no need
 */

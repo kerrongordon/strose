@@ -2342,9 +2342,6 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  .wrap {
-    width: 1200px;
-  }
 }
 /*********************
 LARGE VIEWING SIZE
@@ -2361,6 +2358,9 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  .wrap {
+    width: 1200px;
+  }
 }
 /*********************
 RETINA (2x RESOLUTION DEVICES)
