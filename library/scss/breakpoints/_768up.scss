@@ -57,7 +57,7 @@ NAVIGATION STYLES
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				color: $white;
+				color: darken( $text-color, 20% );
 				text-decoration: underline;
 			}
 		}
@@ -317,7 +317,7 @@ HOME PAGE
 
 	nav {
 		float: right;
-		margin: 2em 0;
+		margin: 4em 0;
 		display: block;
 	}
 }

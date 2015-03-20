@@ -17,8 +17,8 @@ GENERAL STYLES
 
 body {
 	font-family: $lato;
-	font-size: 100%;
-	line-height: 1.5;
+	font-size: $main-font-size;
+	line-height: $main-line-height;
 	color: $text-color;
 	background-color: $gray;
   	-webkit-font-smoothing: antialiased;
@@ -154,7 +154,7 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $header-color;
+	//background-color: $header-color;
 }
 
 	#logo {
@@ -185,7 +185,7 @@ and more scalable.
 
 		a {
 			display: block;
-			color: $white;
+			color: $text-color;
 			text-decoration: none;
 			padding: 0.75em;
 
@@ -196,7 +196,7 @@ and more scalable.
 			keep this file as small as possible!
 			*/
 			&:hover, &:focus {
-
+				
 			}
 		}
 
@@ -260,7 +260,7 @@ POSTS & CONTENT STYLES
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+			//border: 1px solid $border-color;
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -937,15 +937,6 @@ subscriptions
 	}
 }
 
-.breadcrumbs {
-	margin: 2em;
-	text-align: left;
-
-	a:visited {
-		color: $footerbar-font-color;
-	}
-}
-
 /**********************
 blog
 **********************/
@@ -965,4 +956,34 @@ contact form 7
 
 .wpcf7-submit {
 	@extend .comment-reply-link;
+}
+
+
+
+/*******************
+ default blog post
+*******************/
+
+.post-img{
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 3px;
+	}
+}
+
+//LOGO
+
+.logo-img {
+	background-image: url(../images/logo.jpg);
+  	height: 100px;
+  	width: 100px;
+  	display: block;
+} 
+
+.description {
+	margin: 4.5em 0;
+	display: block;
+	float: left;
 }

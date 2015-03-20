@@ -49,10 +49,10 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<p id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
+					<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" class="logo-img" rel="nofollow">  </a></div>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
+					<span class="description"><?php bloginfo('description'); ?></span>
 
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -76,17 +76,22 @@
 
 			</header>
 
-			<div class="subscriptions m-all cf">
+		<?php if ( is_front_page() ) : ?>
+
+
+		<?php else : ?>
+
+			<div class="subscriptions bchead m-all cf">
 
 				<div class="wrap cf">
 
 					<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
 					    <?php if(function_exists('bcn_display'))
-					    echo "<strong>You are here:</strong> ";{
-					        bcn_display();
-					    }?>
+					    echo '<span class="youhere">You are here: </span>'; echo '<div class="breadlist">'; { bcn_display(); } echo '</div>'; ?>
 					</div>
 
 				</div>
 
 			</div>
+
+		<?php endif; ?>

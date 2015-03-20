@@ -10,6 +10,10 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
+								<div class="post-img">
+									<?php the_post_thumbnail( 'bones-thumb-900' ); ?>
+								</div>
+
 								<header class="article-header">
 
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
