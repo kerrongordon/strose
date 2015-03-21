@@ -311,13 +311,13 @@ HOME PAGE
 #inner-header {
 
 	#logo {
-		float: left;
+		float: none;
 		text-align: left;
 	}
 
 	nav {
-		float: right;
-		margin: 4em 0;
+		float: left;
+		margin: 1em 0 1em 25%;
 		display: block;
 	}
 }
@@ -325,4 +325,15 @@ HOME PAGE
 .fimg {
 	background-image: url(../images/strose-all-cuts.png);
 	background-size: inherit;
+}
+
+
+.logo-img {
+	float: none;
+} 
+
+.description {
+	//margin: 4.5em 0;
+	display: block;
+	//float: left;
 }

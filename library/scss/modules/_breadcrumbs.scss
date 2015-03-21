@@ -5,7 +5,23 @@
 	text-align: left;
 
 	a:visited {
-		color: $footerbar-font-color;
+		color: $white;
+	}
+
+	a:hover {
+		color: $white;
+	}
+
+	a:focus {
+		color: $white;	
+	}
+
+	a:visited:hover {
+		color: $white;
+	}
+
+	a:visited:focus {
+		color: $white;
 	}
 }
 
@@ -22,3 +38,4 @@
 	float: left;
 	padding: 5em 1em;
 }
+

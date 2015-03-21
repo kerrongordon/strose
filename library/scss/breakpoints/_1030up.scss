@@ -9,4 +9,22 @@ be seen on the Desktop.
 
 ******************************************************************/
 
+#inner-header {
 
+	#logo {
+		float: left;
+		text-align: left;
+	}
+
+	nav {
+		float: right;
+		margin: 4em 0;
+	}
+}
+
+
+.description {
+	margin: 4.5em 0;
+	display: none;
+	float: left;
+}

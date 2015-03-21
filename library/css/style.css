@@ -1051,7 +1051,19 @@ and it will create a button dependant on those variables.
   text-align: left;
 }
 .breadcrumbs a:visited {
-  color: #ccc;
+  color: #fff;
+}
+.breadcrumbs a:hover {
+  color: #fff;
+}
+.breadcrumbs a:focus {
+  color: #fff;
+}
+.breadcrumbs a:visited:hover {
+  color: #fff;
+}
+.breadcrumbs a:visited:focus {
+  color: #fff;
 }
 
 .youhere {
@@ -2065,12 +2077,19 @@ contact form 7
   height: 100px;
   width: 100px;
   display: block;
+  float: none;
+  margin: 0 auto;
 }
 
 .description {
-  margin: 4.5em 0;
+  margin: 0.6em;
+  float: none;
+  text-align: center;
   display: block;
-  float: left;
+}
+
+.video-post iframe {
+  width: 100%;
 }
 
 /*********************
@@ -2349,18 +2368,26 @@ you can add resource intensive styles.
   }
 
   #inner-header #logo {
-    float: left;
+    float: none;
     text-align: left;
   }
   #inner-header nav {
-    float: right;
-    margin: 4em 0;
+    float: left;
+    margin: 1em 0 1em 25%;
     display: block;
   }
 
   .fimg {
     background-image: url(../images/strose-all-cuts.png);
     background-size: inherit;
+  }
+
+  .logo-img {
+    float: none;
+  }
+
+  .description {
+    display: block;
   }
 }
 /*********************
@@ -2380,6 +2407,20 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
+  #inner-header #logo {
+    float: left;
+    text-align: left;
+  }
+  #inner-header nav {
+    float: right;
+    margin: 4em 0;
+  }
+
+  .description {
+    margin: 4.5em 0;
+    display: none;
+    float: left;
+  }
 }
 /*********************
 LARGE VIEWING SIZE
@@ -2398,6 +2439,10 @@ This is for the larger monitors and possibly full screen viewers.
   ******************************************************************/
   .wrap {
     width: 1200px;
+  }
+
+  .description {
+    display: block;
   }
 }
 /*********************

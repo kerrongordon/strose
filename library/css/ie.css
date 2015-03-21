@@ -424,18 +424,26 @@ HOME PAGE
 }
 
 #inner-header #logo {
-  float: left;
+  float: none;
   text-align: left;
 }
 #inner-header nav {
-  float: right;
-  margin: 4em 0;
+  float: left;
+  margin: 1em 0 1em 25%;
   display: block;
 }
 
 .fimg {
   background-image: url(../images/strose-all-cuts.png);
   background-size: inherit;
+}
+
+.logo-img {
+  float: none;
+}
+
+.description {
+  display: block;
 }
 
 /******************************************************************
@@ -448,6 +456,21 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
+#inner-header #logo {
+  float: left;
+  text-align: left;
+}
+#inner-header nav {
+  float: right;
+  margin: 4em 0;
+}
+
+.description {
+  margin: 4.5em 0;
+  display: none;
+  float: left;
+}
+
 /*
 you can call the larger styles if you want, but there's really no need
 */

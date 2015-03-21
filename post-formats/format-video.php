@@ -17,7 +17,7 @@
 
                 </header> <?php // end article header ?>
 
-                <section class="entry-content cf" itemprop="description">
+                <section class="entry-content cf video-post" itemprop="description">
                   <?php
                     // the content (pretty self explanatory huh)
                     the_content();
