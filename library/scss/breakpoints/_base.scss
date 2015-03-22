@@ -20,7 +20,7 @@ body {
 	font-size: $main-font-size;
 	line-height: $main-line-height;
 	color: $text-color;
-	background-color: $gray;
+	background-color: $sit-main-background;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
@@ -154,7 +154,11 @@ HEADER STYLES
 *********************/
 
 .header {
-	//background-color: $header-color;
+	background-color: $m-blue;
+	color: $white;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 100;
 }
 
 	#logo {
@@ -185,7 +189,7 @@ and more scalable.
 
 		a {
 			display: block;
-			color: $text-color;
+			color: $white;
 			text-decoration: none;
 			padding: 0.75em;
 
@@ -255,12 +259,13 @@ POSTS & CONTENT STYLES
 #content {
 	margin: 1.5em;
 }
-
+		
 		.hentry {
 			background-color: $white;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			//border: 1px solid $border-color;
+			//border: solid 1px $border-color;
+			box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -941,9 +946,11 @@ subscriptions
 blog
 **********************/
 
-.blog {
-	margin: 0 auto;
+.blog-over {
+	margin: -350px auto 0;
 	float: none;
+	position: relative;
+	z-index: 5;
 }
 
 /*******************
@@ -969,7 +976,7 @@ contact form 7
 	img {
 		max-width: 100%;
 		height: auto;
-		border-radius: 3px;
+		border-radius: 3px 3px 0 0;
 	}
 }
 
@@ -996,4 +1003,41 @@ contact form 7
 	iframe {
 		width: 100%;
 	}
+}
+
+.hentrys {
+	background-color: #f8f9fa;
+	border-radius: 3px;
+	margin-bottom: 1.5em;
+	box-shadow: 0 15px 25px -15px rgba(0, 0, 0, 0.5);
+	border: solid 1px $border-color;
+}
+
+.readmore {
+	background-color: #3F51B5;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	border-radius: 50%;
+	float: right;
+	margin: -30px 30px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.post-img-big {
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.padd {
+	background-color: $white;
+	border-radius: 3px;
+	margin-bottom: 1.5em;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
+	padding: 1.5em;
 }

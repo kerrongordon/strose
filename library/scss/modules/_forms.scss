@@ -54,12 +54,14 @@ textarea,
   font-family: $lato;
   background-color: $gray;
   @include transition(background-color 0.24s ease-in-out);
+  transition: all .25s ease;
 
   // a focused input (or hovered on)
   &:focus,
   &:active {
     background-color: lighten($gray, 4%);
     outline: none; 
+    box-shadow: inset 0 0 3px #20bce3;
   } // end hover or focus
 
   // error notification

@@ -19,9 +19,9 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf blog" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-2of3 d-5of7 cf blog-over" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						
-							<div class="hentry">
+							<div class="hentrys wow fadeInUp">
 								<?php echo do_shortcode( '[contact-form-7 id="1234" title="Contact form 1"]' ); ?>
 							</div>
 
@@ -31,5 +31,4 @@
 
 			</div>
 
-<?php get_sidebar( "subscriptions" ); ?>
 <?php get_footer(); ?>

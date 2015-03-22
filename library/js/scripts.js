@@ -117,4 +117,22 @@ jQuery(document).ready(function($) {
   loadGravatars();
 
 
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    
+    
+    
+  } else {
+
+    $(window).scroll(function() {
+      var windowScroll = $(this).scrollTop()/2;
+      $('.post-img-big').css({
+        'top': '-' + windowScroll + 'px'
+      });
+    });
+
+  }
+
+  $('#disqus_thread').addClass('padd wow fadeInUp');
+
+
 }); /* end of as page load scripts */

@@ -425,7 +425,6 @@ HOME PAGE
 
 #inner-header #logo {
   float: none;
-  text-align: left;
 }
 #inner-header nav {
   float: left;
@@ -462,11 +461,12 @@ be seen on the Desktop.
 }
 #inner-header nav {
   float: right;
-  margin: 4em 0;
+  margin: 2em 0;
 }
 
 .description {
-  margin: 4.5em 0;
+  margin: 3em 0;
+  padding-left: 15px;
   display: none;
   float: left;
 }

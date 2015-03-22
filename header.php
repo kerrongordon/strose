@@ -50,7 +50,7 @@
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" class="logo-img" rel="nofollow">  </a></div>
+					<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization"><a href="<?php echo home_url(); ?>" class="" rel="nofollow"> <?php echo bloginfo('name'); ?> </a></div>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<span class="description"><?php bloginfo('description'); ?></span>
@@ -82,7 +82,8 @@
 
 		<?php else : ?>
 
-			<div class="subscriptions bchead m-all cf">
+			<div class="subscriptions bchead m-all cf wow fadeIn">
+			<img class="post-img-big" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?> " alt="">
 
 				<div class="wrap cf">
 
@@ -96,3 +97,4 @@
 			</div>
 
 		<?php endif; ?>
+

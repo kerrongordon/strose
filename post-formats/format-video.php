@@ -1,6 +1,6 @@
 
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article" itemscope itemtype="http://schema.org/VideoObject">
+              <article id="post-<?php the_ID(); ?>" <?php post_class('cf wow fadeInUp'); ?> role="article" itemscope itemtype="http://schema.org/VideoObject">
 
                 <header class="article-header entry-header">
 
@@ -48,6 +48,8 @@
 
                 </footer> <?php // end article footer ?>
 
-                <?php comments_template(); ?>
+                
 
               </article> <?php // end article ?>
+
+            <?php comments_template(); ?>

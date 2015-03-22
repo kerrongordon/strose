@@ -1,3 +1,4 @@
+	<?php get_sidebar( "subscriptions" ); ?>
 		<?php get_sidebar('footerbar'); ?>
 
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
@@ -30,6 +31,10 @@
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
+		
+		<script>
+ 			new WOW().init();
+		</script>
 
 	</body>
 

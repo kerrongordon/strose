@@ -4,18 +4,24 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="blog m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="blog-over m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'wow fadeInUp cf' ); ?> role="article">
 
-								<div class="post-img">
-									<?php the_post_thumbnail( 'bones-thumb-900' ); ?>
+								<div class="post-img">									
+									<?php if ( has_post_thumbnail() ) {
+											the_post_thumbnail( 'bones-thumb-900' ); ?> 
+											<div class="readmore"></div>
+										<?php }	else {
+											
+											}
+									?>
 								</div>
 
 								<header class="article-header">
-
+	
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline entry-meta vcard">
                                         				<?php printf( __( 'Posted %1$s by %2$s', 'strose' ),
@@ -53,7 +59,7 @@
 
 							<?php else : ?>
 
-									<article id="post-not-found" class="hentry cf">
+									<article id="post-not-found" class=" cf">
 											<header class="article-header">
 												<h1><?php _e( 'Oops, Post Not Found!', 'strose' ); ?></h1>
 										</header>

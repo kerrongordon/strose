@@ -1044,7 +1044,9 @@ and it will create a button dependant on those variables.
 }
 
 .bchead {
-  background: url(../images/head-bg.jpg) 50% 100%/cover no-repeat fixed;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
 }
 
 .breadcrumbs {
@@ -1134,6 +1136,7 @@ textarea,
   background-color: #fff;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
+  transition: all .25s ease;
 }
 input[type="text"]:focus, input[type="text"]:active,
 input[type="password"]:focus,
@@ -1170,6 +1173,7 @@ textarea:active,
 .field:active {
   background-color: white;
   outline: none;
+  box-shadow: inset 0 0 3px #20bce3;
 }
 input[type="text"].error, input[type="text"].is-invalid,
 input[type="password"].error,
@@ -1428,7 +1432,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: #5c6b80;
-  background-color: #fff;
+  background-color: #efefef;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -1548,6 +1552,14 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
+.header {
+  background-color: #3F51B5;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 100;
+}
+
 #logo {
   margin: 0.75em 0;
 }
@@ -1583,7 +1595,7 @@ and more scalable.
 }
 .nav li a {
   display: block;
-  color: #5c6b80;
+  color: #fff;
   text-decoration: none;
   padding: 0.75em;
   /*
@@ -1610,6 +1622,7 @@ POSTS & CONTENT STYLES
   background-color: #fff;
   border-radius: 3px;
   margin-bottom: 1.5em;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
 }
 .hentry header {
   border-bottom: 1px solid #f8f9fa;
@@ -2038,7 +2051,7 @@ HOME PAGE
 subscriptions
 **********************/
 .subscriptions {
-  background-color: #1abc9c;
+  background-color: #03A9F4;
   color: #fff;
   text-align: center;
 }
@@ -2051,9 +2064,11 @@ subscriptions
 /**********************
 blog
 **********************/
-.blog {
-  margin: 0 auto;
+.blog-over {
+  margin: -350px auto 0;
   float: none;
+  position: relative;
+  z-index: 5;
 }
 
 /*******************
@@ -2069,7 +2084,7 @@ contact form 7
 .post-img img {
   max-width: 100%;
   height: auto;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
 }
 
 .logo-img {
@@ -2090,6 +2105,43 @@ contact form 7
 
 .video-post iframe {
   width: 100%;
+}
+
+.hentrys {
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  margin-bottom: 1.5em;
+  box-shadow: 0 15px 25px -15px rgba(0, 0, 0, 0.5);
+  border: solid 1px #ccc;
+}
+
+.readmore {
+  background-color: #3F51B5;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border-radius: 50%;
+  float: right;
+  margin: -30px 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.post-img-big {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.padd {
+  background-color: #fff;
+  border-radius: 3px;
+  margin-bottom: 1.5em;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  padding: 1.5em;
 }
 
 /*********************
@@ -2369,7 +2421,6 @@ you can add resource intensive styles.
 
   #inner-header #logo {
     float: none;
-    text-align: left;
   }
   #inner-header nav {
     float: left;
@@ -2413,11 +2464,12 @@ you can add resource intensive styles.
   }
   #inner-header nav {
     float: right;
-    margin: 4em 0;
+    margin: 2em 0;
   }
 
   .description {
-    margin: 4.5em 0;
+    margin: 3em 0;
+    padding-left: 15px;
     display: none;
     float: left;
   }
