@@ -157,12 +157,16 @@ HEADER STYLES
 	background-color: $m-blue;
 	color: $white;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 100;
+    transition: all 0.25s ease-in-out;
 }
 
 	#logo {
 		margin: 0.75em 0;
+		transition: all 0.25s ease-in-out;
 
 		a {
 			color: $white;
@@ -947,8 +951,7 @@ blog
 **********************/
 
 .blog-over {
-	margin: -350px auto 0;
-	float: none;
+	margin: -180px auto 0;
 	position: relative;
 	z-index: 5;
 }
@@ -992,10 +995,11 @@ contact form 7
 } 
 
 .description {
-	margin: 0.6em;
-    float: none;
-    text-align: center;
+	text-align: left;
+  	margin: 0;
+  	padding: 0.6em;
     display: block;
+    transition: all 0.25s ease-in-out;
 }
 
 .video-post {
@@ -1040,4 +1044,16 @@ contact form 7
 	margin-bottom: 1.5em;
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
 	padding: 1.5em;
+}
+
+.navontop {
+	background-color: $m-blue;
+	height: 38px;
+}
+
+#inner-header #logo {
+	float: left;
+	font-size: 1.2em;
+	margin: 0;
+    padding: 0.5em;
 }

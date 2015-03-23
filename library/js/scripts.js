@@ -134,5 +134,14 @@ jQuery(document).ready(function($) {
 
   $('#disqus_thread').addClass('padd wow fadeInUp');
 
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 106 ) {
+            $('.header').addClass('menuTop');
+         }
+        else {
+            $('.header').removeClass('menuTop');
+        }
+    });
+
 
 }); /* end of as page load scripts */

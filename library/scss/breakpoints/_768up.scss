@@ -311,13 +311,13 @@ HOME PAGE
 #inner-header {
 
 	#logo {
-		float: none;
+		float: left;
 		//text-align: left;
 	}
 
 	nav {
-		float: left;
-		margin: 1em 0 1em 25%;
+		float: right;
+		//margin: 1em 0 1em 25%;
 		display: block;
 	}
 }
@@ -329,11 +329,19 @@ HOME PAGE
 
 
 .logo-img {
-	float: none;
+	float: left;
 } 
 
 .description {
 	//margin: 4.5em 0;
-	display: block;
+	display: none;
 	//float: left;
+}
+
+.navontop {
+	height: 105px;
+}
+
+.blog-over {
+	margin: -150px auto 0;
 }

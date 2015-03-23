@@ -1043,12 +1043,6 @@ and it will create a button dependant on those variables.
   background-color: #2472a4;
 }
 
-.bchead {
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-}
-
 .breadcrumbs {
   text-align: left;
 }
@@ -1404,6 +1398,21 @@ select {
   float: right;
   margin: 2em 0;
   display: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.menuTop {
+  position: fixed;
+  width: 100%;
+}
+.menuTop #logo {
+  margin: 0;
+}
+.menuTop .description {
+  margin: 0;
+}
+.menuTop #inner-header nav {
+  margin: 0;
 }
 
 /*********************
@@ -1556,12 +1565,16 @@ HEADER STYLES
   background-color: #3F51B5;
   color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 100;
+  transition: all 0.25s ease-in-out;
 }
 
 #logo {
   margin: 0.75em 0;
+  transition: all 0.25s ease-in-out;
 }
 #logo a {
   color: #fff;
@@ -2065,8 +2078,7 @@ subscriptions
 blog
 **********************/
 .blog-over {
-  margin: -350px auto 0;
-  float: none;
+  margin: -180px auto 0;
   position: relative;
   z-index: 5;
 }
@@ -2097,10 +2109,11 @@ contact form 7
 }
 
 .description {
-  margin: 0.6em;
-  float: none;
-  text-align: center;
+  text-align: left;
+  margin: 0;
+  padding: 0.6em;
   display: block;
+  transition: all 0.25s ease-in-out;
 }
 
 .video-post iframe {
@@ -2142,6 +2155,18 @@ contact form 7
   margin-bottom: 1.5em;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
   padding: 1.5em;
+}
+
+.navontop {
+  background-color: #3F51B5;
+  height: 38px;
+}
+
+#inner-header #logo {
+  float: left;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0.5em;
 }
 
 /*********************
@@ -2242,6 +2267,10 @@ tweeners.
     width: 100%;
     float: left;
     text-align: left;
+  }
+
+  .navontop {
+    height: 99px;
   }
 }
 /*********************
@@ -2420,11 +2449,10 @@ you can add resource intensive styles.
   }
 
   #inner-header #logo {
-    float: none;
+    float: left;
   }
   #inner-header nav {
-    float: left;
-    margin: 1em 0 1em 25%;
+    float: right;
     display: block;
   }
 
@@ -2434,11 +2462,19 @@ you can add resource intensive styles.
   }
 
   .logo-img {
-    float: none;
+    float: left;
   }
 
   .description {
-    display: block;
+    display: none;
+  }
+
+  .navontop {
+    height: 105px;
+  }
+
+  .blog-over {
+    margin: -150px auto 0;
   }
 }
 /*********************
@@ -2472,6 +2508,14 @@ you can add resource intensive styles.
     padding-left: 15px;
     display: none;
     float: left;
+  }
+
+  .bchead {
+    height: 500px;
+  }
+
+  .blog-over {
+    margin: -350px auto 0;
   }
 }
 /*********************
