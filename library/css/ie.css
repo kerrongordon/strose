@@ -255,10 +255,6 @@ HOME PAGE
   text-align: left;
 }
 
-.navontop {
-  height: 99px;
-}
-
 /******************************************************************
 Site Name:
 Author:
@@ -429,6 +425,8 @@ HOME PAGE
 
 #inner-header #logo {
   float: left;
+  font-size: 2em;
+  margin: 0.5em 0;
 }
 #inner-header nav {
   float: right;
@@ -449,11 +447,21 @@ HOME PAGE
 }
 
 .navontop {
-  height: 105px;
+  height: 100px;
 }
 
 .blog-over {
   margin: -150px auto 0;
+  float: none;
+}
+
+.subscriptions {
+  height: 300px;
+}
+
+.menuTop #inner-header #logo {
+  font-size: 1.2em;
+  margin: 0;
 }
 
 /******************************************************************
@@ -476,7 +484,7 @@ be seen on the Desktop.
 }
 
 .description {
-  margin: 3em 0;
+  margin: 2em 0;
   padding-left: 15px;
   display: none;
   float: left;
@@ -488,6 +496,10 @@ be seen on the Desktop.
 
 .blog-over {
   margin: -350px auto 0;
+}
+
+.subscriptions {
+  height: 500px;
 }
 
 /*

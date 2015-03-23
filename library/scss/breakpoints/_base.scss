@@ -156,7 +156,6 @@ HEADER STYLES
 .header {
 	background-color: $m-blue;
 	color: $white;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     width: 100%;
@@ -938,6 +937,10 @@ subscriptions
 	background-color: $subscriptions-color;
 	color: $subscriptions-font-color;
 	text-align: center;
+	overflow: hidden;
+    position: relative;
+    display: block;
+    height: 150px;
 
 	h2 {
 		font-weight: 400;
@@ -951,7 +954,7 @@ blog
 **********************/
 
 .blog-over {
-	margin: -180px auto 0;
+	margin: -100px auto 0;
 	position: relative;
 	z-index: 5;
 }

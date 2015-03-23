@@ -312,7 +312,8 @@ HOME PAGE
 
 	#logo {
 		float: left;
-		//text-align: left;
+		font-size: 2em;
+  		margin: 0.5em 0;
 	}
 
 	nav {
@@ -339,9 +340,25 @@ HOME PAGE
 }
 
 .navontop {
-	height: 105px;
+	height: 100px;
 }
 
 .blog-over {
 	margin: -150px auto 0;
+	float: none;
+}
+
+.subscriptions {
+	height: 300px;
+}
+
+.menuTop {
+
+	#inner-header {
+
+		#logo {
+			font-size: 1.2em; 
+			margin: 0;
+		}
+	}
 }

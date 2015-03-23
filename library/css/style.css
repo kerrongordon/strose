@@ -1404,6 +1404,7 @@ select {
 .menuTop {
   position: fixed;
   width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 .menuTop #logo {
   margin: 0;
@@ -1564,7 +1565,6 @@ HEADER STYLES
 .header {
   background-color: #3F51B5;
   color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
   width: 100%;
@@ -2067,6 +2067,10 @@ subscriptions
   background-color: #03A9F4;
   color: #fff;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 150px;
 }
 .subscriptions h2 {
   font-weight: 400;
@@ -2078,7 +2082,7 @@ subscriptions
 blog
 **********************/
 .blog-over {
-  margin: -180px auto 0;
+  margin: -100px auto 0;
   position: relative;
   z-index: 5;
 }
@@ -2268,10 +2272,6 @@ tweeners.
     float: left;
     text-align: left;
   }
-
-  .navontop {
-    height: 99px;
-  }
 }
 /*********************
 TABLET & SMALLER LAPTOPS
@@ -2450,6 +2450,8 @@ you can add resource intensive styles.
 
   #inner-header #logo {
     float: left;
+    font-size: 2em;
+    margin: 0.5em 0;
   }
   #inner-header nav {
     float: right;
@@ -2470,11 +2472,21 @@ you can add resource intensive styles.
   }
 
   .navontop {
-    height: 105px;
+    height: 100px;
   }
 
   .blog-over {
     margin: -150px auto 0;
+    float: none;
+  }
+
+  .subscriptions {
+    height: 300px;
+  }
+
+  .menuTop #inner-header #logo {
+    font-size: 1.2em;
+    margin: 0;
   }
 }
 /*********************
@@ -2504,7 +2516,7 @@ you can add resource intensive styles.
   }
 
   .description {
-    margin: 3em 0;
+    margin: 2em 0;
     padding-left: 15px;
     display: none;
     float: left;
@@ -2516,6 +2528,10 @@ you can add resource intensive styles.
 
   .blog-over {
     margin: -350px auto 0;
+  }
+
+  .subscriptions {
+    height: 500px;
   }
 }
 /*********************
