@@ -1,10 +1,10 @@
-				<div id="subscriptions" class="subscriptions m-all cf" role="complementary">
+				<div id="subscription" class="subscription m-all cf" role="complementary">
 
 					<div class="wrap">
 
-						<?php if ( is_active_sidebar( 'subscriptions' ) ) : ?>
+						<?php if ( is_active_sidebar( 'dailymessage' ) ) : ?>
 
-							<?php dynamic_sidebar( 'subscriptions' ); ?>
+							<?php dynamic_sidebar( 'dailymessage' ); ?>
 
 						<?php else : ?>
 

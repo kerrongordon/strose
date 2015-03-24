@@ -151,6 +151,28 @@ function bones_theme_customizer($wp_customize) {
 
 add_action( 'customize_register', 'bones_theme_customizer' );
 
+function menu_search( $form ) {
+  $form = '<form role="search" method="get" id="searchform" class="searchform menuform" action="' . home_url( '/' ) . '" >
+  <div> 
+    <input type="search" class="menuSeach" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" />
+  </div>
+  </form>';
+
+  return $form;
+}
+
+add_filter( 'get_search_form', 'menu_search' );
+
+
+function string_limit_words($string, $word_limit)
+{
+  $words = explode(' ', $string, ($word_limit + 1));
+  if(count($words) > $word_limit)
+  array_pop($words);
+  return implode(' ', $words);
+}
+
+
 /************* ACTIVE SIDEBARS ********************/
 
 // Sidebars & Widgetizes Areas
@@ -196,8 +218,8 @@ function bones_register_sidebars() {
   ));
 
   register_sidebar(array(
-    'id' => 'subscriptions',
-    'name' => __( 'Home page subscriptions', 'strose' ),
+    'id' => 'dailymessage',
+    'name' => __( 'Home page daily message', 'strose' ),
     'description' => __( 'The footer-bar sidebar.', 'strose' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',

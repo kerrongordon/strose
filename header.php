@@ -16,6 +16,7 @@
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
+		<meta name="theme-color" content="#3f51b5">
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
@@ -57,7 +58,12 @@
 
 						<?php // if you'd like to use the site description you can un-comment it below ?>
 						<span class="description"><?php bloginfo('description'); ?></span>
-
+						
+						<div class="mobile-menu">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
 
 						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 							<?php wp_nav_menu(array(
@@ -74,6 +80,8 @@
 	    					         'fallback_cb' => ''                             // fallback function (if there is one)
 							)); ?>
 
+							<?php get_search_form(' menu_search '); ?>
+
 						</nav>
 
 				</div>
@@ -88,8 +96,8 @@
 		<?php else : ?>
 
 			<div class="subscriptions bchead m-all cf wow fadeIn">
-			<img class="post-img-big" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?> " alt="">
-
+			
+			<img class="post-img-big" src="<?php if ( has_post_thumbnail() ) { echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); }	else { echo get_stylesheet_directory_uri();?>/library/images/bg.png <?php } ?>" alt="">
 				<div class="wrap cf">
 
 					<!--<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
@@ -102,4 +110,6 @@
 			</div>
 
 		<?php endif; ?>
+
+
 

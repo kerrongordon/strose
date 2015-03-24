@@ -1,4 +1,4 @@
-	<?php get_sidebar( "subscriptions" ); ?>
+	<?php get_sidebar( "dailymessage" ); ?>
 		<?php get_sidebar('footerbar'); ?>
 
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
@@ -21,7 +21,7 @@
 						)); ?>
 					</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?> <?php bloginfo('description'); ?></p>
 
 				</div>
 
@@ -35,6 +35,7 @@
 		<script>
  			new WOW().init();
 		</script>
+
 
 	</body>
 

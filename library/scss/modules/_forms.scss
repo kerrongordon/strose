@@ -128,3 +128,30 @@ select {
 .wpcf7 {
   padding: 1.5em !important;
 }
+
+input[type="search"],
+.menuSeach {
+  margin: 9px 0;
+  line-height: 1.5;
+  height: 25px;
+  border-radius: 0;
+  border-color: transparent;
+  background: transparent;
+  color: #fff;
+  width: 46px;
+
+  &:focus {
+    background: transparent;
+    color: #fff;
+    box-shadow: 0 1px;
+    width: 200px;
+  }
+
+  &:active {
+    background: transparent;
+    color: #fff;
+    box-shadow: 0 1px;
+    width: 200px;
+  }
+}
+
