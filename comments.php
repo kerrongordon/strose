@@ -14,37 +14,24 @@ if ( post_password_required() ) {
 
   <?php if ( have_comments() ) : ?>
 
-    <h3 id="comments-title" class="h2"><?php comments_number( __( '<span>No</span> Comments', 'strose' ), __( '<span>One</span> Comment', 'strose' ), __( '<span>%</span> Comments', 'strose' ) );?></h3>
+    <?php if (comments_open()) : ?>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'testout'; // Required - Replace example with your forum shortname
 
-    <section class="commentlist">
-      <?php
-        wp_list_comments( array(
-          'style'             => 'div',
-          'short_ping'        => true,
-          'avatar_size'       => 40,
-          'callback'          => 'bones_comments',
-          'type'              => 'all',
-          'reply_text'        => __('Reply', 'strose'),
-          'page'              => '',
-          'per_page'          => '',
-          'reverse_top_level' => null,
-          'reverse_children'  => ''
-        ) );
-      ?>
-    </section>
-
-    <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
-    	<nav class="navigation comment-navigation" role="navigation">
-      	<div class="comment-nav-prev"><?php previous_comments_link( __( '&larr; Previous Comments', 'strose' ) ); ?></div>
-      	<div class="comment-nav-next"><?php next_comments_link( __( 'More Comments &rarr;', 'strose' ) ); ?></div>
-    	</nav>
-    <?php endif; ?>
-
-    <?php if ( ! comments_open() ) : ?>
-    	<p class="no-comments"><?php _e( 'Comments are closed.' , 'strose' ); ?></p>
-    <?php endif; ?>
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <?php endif; // comments_open ?>
 
   <?php endif; ?>
 
-  <?php comment_form(); ?>
+  <?php //comment_form(); ?>
 

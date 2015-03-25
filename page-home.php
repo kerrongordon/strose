@@ -85,6 +85,6 @@
 
 			
 
-<div class="fimg"></div>
+<!--<div class="fimg"></div>-->
 
 <?php get_footer(); ?>

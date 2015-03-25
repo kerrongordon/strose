@@ -2258,7 +2258,7 @@ contact form 7
 }
 
 .subscription {
-  background-color: #03a9f4;
+  background-color: #F44336;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -2645,7 +2645,7 @@ you can add resource intensive styles.
   }
 
   .bchead {
-    height: 500px;
+    height: 400px;
   }
 
   .blog-over {
@@ -2677,6 +2677,10 @@ This is for the larger monitors and possibly full screen viewers.
 
   .description {
     display: block;
+  }
+
+  .bchead {
+    height: 500px;
   }
 }
 /*********************

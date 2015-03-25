@@ -40,7 +40,8 @@
 
 								<footer class="article-footer cf">
 									<p class="footer-comment-count">
-										<?php comments_number( __( '<span>No</span> Comments', 'strose' ), __( '<span>One</span> Comment', 'strose' ), __( '<span>%</span> Comments', 'strose' ) );?>
+										<?php //comments_number( __( '<span>No</span> Comments', 'strose' ), __( '<span>One</span> Comment', 'strose' ), __( '<span>%</span> Comments', 'strose' ) );?>
+										<span class="disqus-comment-count" data-disqus-url="<?php the_permalink() ?>#disqus_thread">0 Comments</span>
 									</p>
 
 
