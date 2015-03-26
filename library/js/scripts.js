@@ -147,5 +147,4 @@ jQuery(document).ready(function($) {
       $('.header').toggleClass('mobile-menuon animated slideInDown');
   });  
 
-
 }); /* end of as page load scripts */

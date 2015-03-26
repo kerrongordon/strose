@@ -359,13 +359,10 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.sidebar {
-  margin-top: 2.2em;
-}
-
 .widgettitle {
-  border-bottom: 2px solid #444;
-  margin-bottom: 0.75em;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+  margin-bottom: .75em;
+  text-align: center;
 }
 
 .widget {
@@ -388,10 +385,21 @@ SIDEBARS & ASIDES
 /* archives widget */
 /* tag-cloud widget */
 /* calendar widget */
+#calendar_wrap #wp-calendar {
+  width: 100%;
+}
+
 /* category widget */
 /* recent-comments widget */
 /* search widget */
 /* text widget */
+#sidebar1 .widget {
+  float: left;
+  margin: 2em;
+  width: 92.7%;
+  display: block;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -505,11 +513,7 @@ be seen on the Desktop.
 }
 
 .blog-over {
-  margin: -350px auto 0;
-}
-
-.subscriptions {
-  height: 500px;
+  margin: -300px auto 0;
 }
 
 /*
