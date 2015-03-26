@@ -28,15 +28,15 @@
 									<?php if ( has_post_thumbnail() ) {
 											the_post_thumbnail( 'bones-thumb-900' ); ?> 
 											<a type="button" href="<?php the_permalink() ?>" class="readmore cal-bg"><span class="dashicons dashicons-calendar-alt"></span></a>
-										<?php }	else {
-											
-											}
+										<?php }	else { ?>
+											<a type="button" href="<?php the_permalink() ?>" class="readmore no-post-img"><span class="dashicons dashicons-calendar-alt"></span></a>
+										<?php }
 									?>
 								</div>
 
 								<header class="article-header">
 	
-									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a> <span class="event_venue">at <?php echo get_post_meta( get_the_ID(), 'event-venue', true ); ?></span></h1>
 									<p class="byline entry-meta vcard">
                                         				<?php printf( __( 'Posted %1$s by %2$s', 'strose' ),
                        								/* the time the post was published */
@@ -56,11 +56,6 @@
 									<p class="footer-comment-count">
 										
 									</p>
-
-
-                 	<?php printf( '<p class="footer-category">' . __('filed under', 'strose' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
-
-                  <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'strose' ) . '</span> ', ', ', '</p>' ); ?>
 
 
 								</footer>

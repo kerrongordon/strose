@@ -11,18 +11,21 @@
  *
  * For more info: http://codex.wordpress.org/Page_Templates
 */
+
+ //fimg class for face image
 ?>
 
 <?php get_header(); ?>
 
-			<div id="content" class="fimg" style="height: auto;">
+			<div id="content" class=" " style="height: auto;">
 
 				<div id="inner-content" class="wrap cf">
 
 						<main id="main" class="m-all t-2of3 d-5of7 cf blog-over" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						
-							<div class="hentrys wow fadeInUp">
-								<?php echo do_shortcode( '[contact-form-7 id="1234" title="Contact form 1"]' ); ?>
+							<div class="hentry wow fadeInUp">
+								<?php echo do_shortcode( '[contact-form-7 id="302" title="contact"]' ); ?>
+
 							</div>
 
 						</main>

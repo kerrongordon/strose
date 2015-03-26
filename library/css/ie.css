@@ -482,6 +482,17 @@ HOME PAGE
   display: block;
 }
 
+article.featured-post {
+  width: 225px;
+  float: left;
+  margin: 1em;
+}
+
+li.sis_event_entry {
+  float: left;
+  width: 338px;
+}
+
 /******************************************************************
 Site Name:
 Author:

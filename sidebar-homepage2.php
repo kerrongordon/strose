@@ -1,8 +1,8 @@
-				<div id="homesidebar" class="homesidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
+				<div id="homepagemain" class="homepagemain m-all cf" role="complementary">
 
-						<?php if ( is_active_sidebar( 'homesidebar' ) ) : ?>
+						<?php if ( is_active_sidebar( 'homepage2' ) ) : ?>
 
-							<?php dynamic_sidebar( 'homesidebar' ); ?>
+							<?php dynamic_sidebar( 'homepage2' ); ?>
 
 						<?php else : ?>
 

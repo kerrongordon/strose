@@ -13,10 +13,10 @@
 								<div class="post-img">									
 									<?php if ( has_post_thumbnail() ) {
 											the_post_thumbnail( 'bones-thumb-900' ); ?> 
-											<div class="readmore"></div>
-										<?php }	else {
-											
-											}
+											<a type="button" href="<?php the_permalink() ?>" class="readmore"><span class="dashicons dashicons-editor-alignleft"></span></a>
+										<?php }	else { ?>
+											<a type="button" href="<?php the_permalink() ?>" class="readmore no-post-img"><span class="dashicons dashicons-editor-alignleft"></span></a>
+										<?php }
 									?>
 								</div>
 

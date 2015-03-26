@@ -175,6 +175,14 @@ function string_limit_words($string, $word_limit)
   return implode(' ', $words);
 }
 
+/**
+ * Enqueue Dashicons style for frontend use
+ */
+function mytheme_scripts() {
+  wp_enqueue_style( 'dashicons' );
+}
+
+add_action( 'wp_enqueue_scripts', 'mytheme_scripts' );
 
 /************* ACTIVE SIDEBARS ********************/
 
@@ -201,23 +209,23 @@ function bones_register_sidebars() {
   ));
 
   register_sidebar(array(
-    'id' => 'homepagemain',
-    'name' => __( 'Home page main content', 'strose' ),
+    'id' => 'homepage1',
+    'name' => __( 'Home page main content one', 'strose' ),
     'description' => __( 'The footer-bar sidebar.', 'strose' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="">',
-    'after_title' => '</h4>',
+    'before_title' => '<h2 class="">',
+    'after_title' => '</h2>',
   ));
 
   register_sidebar(array(
-    'id' => 'homesidebar',
-    'name' => __( 'Home page sidebar', 'strose' ),
+    'id' => 'homepage2',
+    'name' => __( 'Home page main content two', 'strose' ),
     'description' => __( 'The footer-bar sidebar.', 'strose' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="">',
-    'after_title' => '</h4>',
+    'before_title' => '<h2 class="">',
+    'after_title' => '</h2>',
   ));
 
   register_sidebar(array(

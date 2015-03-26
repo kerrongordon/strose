@@ -97,7 +97,7 @@
 
 			<div class="subscriptions bchead m-all cf wow fadeIn">
 			
-			<img class="post-img-big" src="<?php if ( has_post_thumbnail() ) { echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); }	else { echo get_stylesheet_directory_uri();?>/library/images/bg.png <?php } ?>" alt="">
+			<img class="post-img-big" src="<?php if ( has_post_thumbnail() ) { echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); } else { echo get_stylesheet_directory_uri();?>/library/images/bg.png <?php } ?>" alt="">
 				<div class="wrap cf">
 
 					<!--<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
