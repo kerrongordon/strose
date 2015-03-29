@@ -208,4 +208,16 @@ function sis_custom_columns_content( $column_name, $post_id ) {
 }
 add_action( 'manage_event_posts_custom_column', 'sis_custom_columns_content', 10, 2 );
 
+
+function kgp_get_date(  ) {
+	$start_date 	= date_i18n( get_option( 'date_format' ), get_post_meta( get_the_ID(), 'event-start-date', true ) );
+	$end_date 		= date_i18n( get_option( 'date_format' ), get_post_meta( get_the_ID(), 'event-end-date', true ) );
+
+	if ($start_date === $end_date) {
+		echo "On " . $start_date;
+	} else {
+		echo "On " . $start_date . " To " . $end_date;
+	}
+}
+
 ?>

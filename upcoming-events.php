@@ -25,6 +25,9 @@
 						'meta_key'				=>	'event-start-date',
 						'orderby'				=>	'meta_value_num',
 						'order'					=>	'ASC',
+						'cache_results'          => true,
+						'update_post_meta_cache' => true,
+						'update_post_term_cache' => true,
 						'meta_query'			=>	$meta_quer_args
 					);
 
@@ -65,14 +68,13 @@
 								</div>
 
 								<a href="<?php the_permalink(); ?>">
-								<time class="sis_event_date"><span class="dashicons dashicons-calendar-alt"></span> On 
-									<?php echo date_i18n( get_option( 'date_format' ), $event_start_date ); ?> 
-									To 
-									<?php echo date_i18n( get_option( 'date_format' ), $event_end_date ); ?>
+								<time class="sis_event_date"><span class="dashicons dashicons-calendar-alt"></span> 
+								<?php kgp_get_date(); ?>
 								</time>
 								</a>
 							</li>
 						<?php endwhile; ?>
+
 					</ul>
 
 					</div>

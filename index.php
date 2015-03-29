@@ -22,7 +22,7 @@
 
 								<header class="article-header">
 	
-									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php echo substr(the_title('', '', FALSE), 0, 25); ?>...</a></h1>
 									<p class="byline entry-meta vcard">
                                         				<?php printf( __( 'Posted %1$s by %2$s', 'strose' ),
                        								/* the time the post was published */

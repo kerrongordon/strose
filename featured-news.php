@@ -14,6 +14,9 @@
 		'posts_per_page'         => '3',
 		'orderby'                => 'date',
 		'meta_key'               => '_thumbnail_id',
+		'cache_results'          => true,
+		'update_post_meta_cache' => true,
+		'update_post_term_cache' => true,
 	);
 
 	// The Query
@@ -23,6 +26,7 @@
 	if ( $post_query->have_posts() ) {
 		while ( $post_query->have_posts() ) {
 			$post_query->the_post(); ?>
+		
 		<article class="featured-post hentry">
 			<div class="post-img">									
 				<?php if ( has_post_thumbnail() ) {
@@ -54,6 +58,7 @@
 
 			
 		</article>
+		
 
 		<?php	}
 		} else {

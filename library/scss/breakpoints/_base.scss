@@ -1286,7 +1286,7 @@ li.sis_event_entry {
 }
 
 .c-h-content {
-	width: 70%;
+	//width: 70%;
   	float: none;
   	margin: 0 auto;
 
@@ -1298,4 +1298,13 @@ li.sis_event_entry {
   	h1, h2, h3, h4 {
   		text-align: center;
   	}
+}
+
+.more-f-post {
+	width: 200%;
+    margin: 0 0%;
+}
+
+.ofh {
+	overflow: hidden;
 }

@@ -54,7 +54,7 @@
 
 								<footer class="article-footer cf">
 									<p class="footer-comment-count">
-										
+										<?php kgp_get_date(); ?>
 									</p>
 
 

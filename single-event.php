@@ -68,7 +68,9 @@
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
-									<time class="sis_event_date"><?php echo date_i18n( get_option( 'date_format' ), get_post_meta( get_the_ID(), 'event-start-date', true ) ); ?> &ndash; <?php echo date_i18n( get_option( 'date_format' ), get_post_meta( get_the_ID(), 'event-end-date', true ) ); ?></time>
+									<time class="sis_event_date">
+									<?php kgp_get_date(); ?>
+									</time>
 								</footer>
 
 								<?php comments_template(); ?>

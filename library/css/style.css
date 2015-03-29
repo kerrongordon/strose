@@ -1049,35 +1049,46 @@ and it will create a button dependant on those variables.
 
 .breadcrumbs {
   text-align: left;
+  z-index: 5;
+  position: relative;
+  padding: 0 1em;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  color: #5c6b80;
+}
+.breadcrumbs span {
+  color: #5c6b80;
 }
 .breadcrumbs a:visited {
-  color: #fff;
+  color: #5c6b80;
 }
 .breadcrumbs a:hover {
-  color: #fff;
+  color: #5c6b80;
 }
 .breadcrumbs a:focus {
-  color: #fff;
+  color: #5c6b80;
 }
 .breadcrumbs a:visited:hover {
-  color: #fff;
+  color: #5c6b80;
 }
 .breadcrumbs a:visited:focus {
-  color: #fff;
+  color: #5c6b80;
 }
 
 .youhere {
-  padding: 5em 1em 5em 0;
+  padding: 1em 0.1em 1em 0;
   display: block;
-  width: 130px;
+  width: 90px;
   float: left;
-  box-shadow: 1px 1px 0 0.1px rgba(255, 255, 255, 0.4);
+  color: #5c6b80;
 }
 
 .breadlist {
   display: block;
   float: left;
-  padding: 5em 1em;
+  padding: 1em 0;
+  color: #5c6b80;
 }
 
 /******************************************************************
@@ -2391,7 +2402,6 @@ li.sis_event_entry h4, li.sis_event_entry .byline {
 }
 
 .c-h-content {
-  width: 70%;
   float: none;
   margin: 0 auto;
 }
@@ -2401,6 +2411,15 @@ li.sis_event_entry h4, li.sis_event_entry .byline {
 }
 .c-h-content h1, .c-h-content h2, .c-h-content h3, .c-h-content h4 {
   text-align: center;
+}
+
+.more-f-post {
+  width: 200%;
+  margin: 0 0%;
+}
+
+.ofh {
+  overflow: hidden;
 }
 
 /*********************
