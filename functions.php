@@ -77,8 +77,9 @@ if ( ! isset( $content_width ) ) {
 
 // Thumbnail sizes
 add_image_size( 'bones-thumb-700', 1200, 700, true );
-add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-900', 900, 350, true );
+add_image_size( 'bones-thumb-600', 600, 150, true );
+add_image_size( 'bones-thumb-450', 450, 175, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 
 /*

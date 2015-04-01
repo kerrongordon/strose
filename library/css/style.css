@@ -2138,6 +2138,7 @@ contact form 7
 *******************/
 .post-img img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 3px 3px 0 0;
 }
@@ -2387,6 +2388,11 @@ article.featured-post {
   float: none;
   display: block;
   margin: 2em 0;
+  transition: all 0.25s ease-in-out;
+}
+article.featured-post:hover {
+  box-shadow: 0 20px 60px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 article.featured-post .readmore {
   padding: 1em;

@@ -100,10 +100,10 @@
 			<img class="post-img-big" src="<?php if ( has_post_thumbnail() ) { echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID, 'bones-thumb-700' ) ); } else { echo get_stylesheet_directory_uri();?>/library/images/bg.png <?php } ?>" alt="">
 				<div class="wrap cf">
 
-					<div class="breadcrumbs cf wow slideInDown" xmlns:v="http://rdf.data-vocabulary.org/#">
-					    <?php if(function_exists('bcn_display'))
-					    echo '<span class="youhere">You are here: </span>'; echo '<div class="breadlist">'; { bcn_display(); } echo '</div>'; ?>
-					</div>
+					<!--<div class="breadcrumbs cf wow slideInDown" xmlns:v="http://rdf.data-vocabulary.org/#">
+					    <?php //if(function_exists('bcn_display'))
+					    //echo '<span class="youhere">You are here: </span>'; echo '<div class="breadlist">'; { bcn_display(); } echo '</div>'; ?>
+					</div>-->
 
 				</div>
 
