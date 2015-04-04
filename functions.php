@@ -177,6 +177,7 @@ function string_limit_words($string, $word_limit)
   return implode(' ', $words);
 }
 
+
 /**
  * Enqueue Dashicons style for frontend use
  */

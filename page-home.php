@@ -17,6 +17,8 @@
 	
 	 <?php putRevSlider("strose") ?>
 
+	 	<div class="w-h-full">
+
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
@@ -31,9 +33,13 @@
 
 			</div>
 
+		</div>
+
 		<?php include 'featured-news.php'; ?>
 
-		<div id="content">
+		<div class="w-h-full">
+
+			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
 
@@ -47,7 +53,9 @@
 
 			</div>
 
+		</div>
+
 		<?php include 'upcoming-events.php'; ?>	
-<!--<div class="fimg"></div>-->
+<div class="fimg"></div>
 
 <?php get_footer(); ?>

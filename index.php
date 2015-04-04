@@ -4,11 +4,11 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="blog-over m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-all d-7of7 df" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'wow fadeInUp cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'wow slideInUp cf' ); ?> data-wow-delay="<?php echo($wp_query->current_post + 1); ?>00ms" role="article">
 
 								<div class="post-img">									
 									<?php if ( has_post_thumbnail() ) {
@@ -56,7 +56,7 @@
 
 							<?php endwhile; ?>
 
-									<?php bones_page_navi(); ?>
+									
 
 							<?php else : ?>
 
@@ -77,6 +77,7 @@
 
 						</main>
 
+							<?php bones_page_navi(); ?>
 
 				</div>
 

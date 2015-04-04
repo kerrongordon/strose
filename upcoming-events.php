@@ -4,7 +4,7 @@
 
 		<div id="inner-content" class="wrap cf">
 
-		<h1 class="fea-news-title">Upcoming Events</h1>
+		<!--<h1 class="fea-news-title">Events</h1>-->
 	
 	<?php
 					//Preparing the query for events

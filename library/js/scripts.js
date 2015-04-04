@@ -137,9 +137,11 @@ jQuery(document).ready(function($) {
     $(window).bind('scroll', function() {
         if ($(window).scrollTop() > 106 ) {
             $('.header').addClass('menuTop');
+            $(".header").css("background-color", "#3f51b5");
          }
         else {
             $('.header').removeClass('menuTop');
+            $(".header").css("background-color", "transparent");
         }
     });
 
@@ -147,6 +149,8 @@ jQuery(document).ready(function($) {
       $('.header').toggleClass('mobile-menuon animated slideInDown');
   });  
 
- 
+  $(".sub-h-full > article").click(function(){
+    window.location=$(this).find("a").attr("href"); return false;
+  });
 
 }); /* end of as page load scripts */

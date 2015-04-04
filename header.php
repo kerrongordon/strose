@@ -46,9 +46,9 @@
 
 		<div id="container">
 
-			<div class="navontop">
+			<div class="<?php if ( is_front_page() ) : ?> <?php else : ?>navontop<?php endif; ?>">
 
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<header class="header wow slideInDown" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="wrap cf">
 					
@@ -96,8 +96,18 @@
 		<?php else : ?>
 
 			<div class="subscriptions bchead m-all cf wow fadeIn">
-			
-			<img class="post-img-big" src="<?php if ( has_post_thumbnail() ) { echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID, 'bones-thumb-700' ) ); } else { echo get_stylesheet_directory_uri();?>/library/images/bg.png <?php } ?>" alt="">
+
+			<?php 
+				$page_id = get_queried_object_id();
+				if ( has_post_thumbnail( $page_id ) ) :
+				    $image_array = wp_get_attachment_image_src( get_post_thumbnail_id( $page_id ), 'bones-thumb-700' );
+				    $image = $image_array[0];
+				else :
+				    $image = get_template_directory_uri() . '/library/images/bg.png';
+				endif; 
+			?>
+			<div class="post-img-big-overlay"></div>
+			<img class="post-img-big" src="<?php echo $image;?>" alt="">
 				<div class="wrap cf">
 
 					<!--<div class="breadcrumbs cf wow slideInDown" xmlns:v="http://rdf.data-vocabulary.org/#">
