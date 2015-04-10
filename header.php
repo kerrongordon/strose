@@ -46,7 +46,7 @@
 
 		<div id="container">
 
-			<div class="<?php if ( is_front_page() ) : ?> <?php else : ?>navontop<?php endif; ?>">
+			<div class="navontop">
 
 			<header class="header wow slideInDown" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 

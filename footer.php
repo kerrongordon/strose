@@ -35,31 +35,6 @@
 		<script>
  			new WOW().init();
 		</script>
-		
-		<script type="text/javascript">
-			/* * * Just replace ExampleShortname with your shortname  * * */
-			var disqus_shortname = 'testout'; // required: replace example with your forum shortname
-			/* * * Don't make any change for bellow lines * * */
-			(function () {
-			var s = document.createElement('script'); s.async = true;
-			s.type = 'text/javascript';
-			s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-			}());
-		</script>
-
-		<script>
-			var DEBUG_MODE = true; // Set this value to false for production
- 
-			if(typeof(console) === 'undefined') {
-			    console = {}
-			}
-			 
-			if(!DEBUG_MODE || typeof(console.log) === 'undefined') {
-			    // FYI: Firebug might get cranky...
-			    console.log = console.error = console.info = console.debug = console.warn = console.trace = console.dir = console.dirxml = console.group = console.groupEnd = console.time = console.timeEnd = console.assert = console.profile = function() {};
-			}
-		</script>
 
 	</body>
 

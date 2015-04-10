@@ -134,19 +134,19 @@ jQuery(document).ready(function($) {
 
   $('#disqus_thread').addClass('padd wow fadeInUp');
 
+  var headerBar = $('.header');
+
     $(window).bind('scroll', function() {
         if ($(window).scrollTop() > 106 ) {
-            $('.header').addClass('menuTop');
-            $(".header").css("background-color", "#3f51b5");
+            headerBar.addClass('menuTop');
          }
         else {
-            $('.header').removeClass('menuTop');
-            $(".header").css("background-color", "transparent");
+            headerBar.removeClass('menuTop');
         }
     });
 
   $('.mobile-menu').click(function() {
-      $('.header').toggleClass('mobile-menuon animated slideInDown');
+      headerBar.toggleClass('mobile-menuon animated slideInDown');
   });  
 
   $(".sub-h-full > article").click(function(){
