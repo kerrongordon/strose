@@ -42,7 +42,7 @@
 							$event_venue = get_post_meta( get_the_ID(), 'event-venue', true );
 							$event_image= wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
 						?>
-							<li class="sis_event_entry hentry">
+							<li class="sis_event_entry featured-post hentry">
 								
 								<h4>
 									<a href="<?php the_permalink(); ?>" class="sis_event_title"><?php the_title(); ?></a>

@@ -33,6 +33,9 @@ function bones_ahoy() {
    // upcoming-events
    require_once( 'library/upcoming-events.php' );
 
+   // history
+   require_once( 'library/history.php' );
+
   // launching operation cleanup
   add_action( 'init', 'bones_head_cleanup' );
   // A better title

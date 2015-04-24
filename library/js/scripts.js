@@ -149,8 +149,9 @@ jQuery(document).ready(function($) {
       headerBar.toggleClass('mobile-menuon animated slideInDown');
   });  
 
-  $(".sub-h-full > article").click(function(){
-    window.location=$(this).find("a").attr("href"); return false;
+  $('.featured-post').click(function(){
+    window.location=$(this).find('a').attr('href'); return false;
+    console.log('click article');
   });
 
 }); /* end of as page load scripts */

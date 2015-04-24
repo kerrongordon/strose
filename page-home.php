@@ -14,8 +14,6 @@
 ?>
 
 <?php get_header(); ?>
-	
-	 <?php putRevSlider("strose") ?>
 
 	 	<div class="w-h-full">
 

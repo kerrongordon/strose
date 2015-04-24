@@ -2,6 +2,8 @@
 	background-color: $footerbar-color;
 	width: 100%;
 	color: $footerbar-font-color;
+	position: relative;
+	z-index: 10;
 
 	.widget {
 		float: left;

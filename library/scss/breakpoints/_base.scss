@@ -258,9 +258,13 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.oh {
+	padding: 1.5em;
+	overflow: hidden;
+}
 
 #content {
-	margin: 1.5em;
+	padding: 1.5em;
 }
 		
 		.hentry {
@@ -873,6 +877,8 @@ FOOTER STYLES
 	clear: both;
 	background-color: $black;
 	color: $light-gray;
+	position: relative;
+	z-index: 10;
 }
 
 	/*
@@ -1127,29 +1133,8 @@ contact form 7
 
 }
 
-@mixin optional-at-root($sel) {
-  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
-    @content;
-  }
-}
 
-@mixin placeholder {
-  @include optional-at-root('::-webkit-input-placeholder') {
-    @content;
-  }
 
-  @include optional-at-root(':-moz-placeholder') {
-    @content;
-  }
-
-  @include optional-at-root('::-moz-placeholder') {
-    @content;
-  }
-
-  @include optional-at-root(':-ms-input-placeholder') {
-    @content;
-  }
-}
 
 input[type="search"], .menuSeach {
 	@include placeholder {
@@ -1201,7 +1186,7 @@ input[type="search"], .menuSeach {
 }
 
 .subscription {
-  background-color: #BB3939;
+  background-color: $red;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -1319,16 +1304,56 @@ li.sis_event_entry {
 
 .post-img-big-overlay {
 	position: absolute;
-  	background: url(../images/dot.png) repeat;
+  	background: $sit-main-background;
   	z-index: 20;
   	top: 0;
   	left: 0;
   	right: 0;
   	bottom: 0;
-  	//opacity: 0.6;
 }
 
 .w-h-full {
 	background-color: #fff;
 	padding: 1em;
+}
+
+.history:before {
+  display: block;
+  height: 25%;
+  width: 0;
+  border-right: solid 5px $red;
+  position: absolute;
+  margin: -56px;
+  z-index: 0;
+}
+
+.history-over {
+	margin: 0 auto;
+	position: relative;
+	float: none;
+
+	.hentry {
+		margin: 2em 0 10em;
+		background-color: #fdf6e3;
+		border-radius: 0;
+	}
+
+	p {
+		font-size: 1.2em
+	}
+}
+
+.readmore-h {
+	@extend .readmore;
+	float: left;
+	margin: 100px -77px 0;
+}
+
+.fixlocal {
+	width: 30px;
+	height: 30px;
+	background: $red;
+	border-radius: 50%;
+	margin: 10% -68px;
+	position: fixed;
 }

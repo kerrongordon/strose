@@ -1477,6 +1477,8 @@ input[type="search"]:active,
   background-color: #34495e;
   width: 100%;
   color: #ccc;
+  position: relative;
+  z-index: 10;
 }
 .footerbar .widget {
   float: left;
@@ -1722,8 +1724,13 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.oh {
+  padding: 1.5em;
+  overflow: hidden;
+}
+
 #content {
-  margin: 1.5em;
+  padding: 1.5em;
 }
 
 .hentry {
@@ -2117,6 +2124,8 @@ FOOTER STYLES
   clear: both;
   background-color: #323944;
   color: #f8f9fa;
+  position: relative;
+  z-index: 10;
 }
 
 /*
@@ -2226,7 +2235,7 @@ contact form 7
   border: solid 1px #ccc;
 }
 
-.readmore {
+.readmore, .readmore-h {
   background-color: #3F51B5;
   position: relative;
   border-radius: 50%;
@@ -2235,7 +2244,7 @@ contact form 7
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   padding: 1em;
 }
-.readmore .dashicons {
+.readmore .dashicons, .readmore-h .dashicons {
   color: #fff;
   text-align: center;
   display: block;
@@ -2448,7 +2457,7 @@ article.featured-post:hover {
   box-shadow: 0 20px 60px 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-article.featured-post .readmore {
+article.featured-post .readmore, article.featured-post .readmore-h {
   padding: 1em;
 }
 
@@ -2483,7 +2492,7 @@ li.sis_event_entry h4, li.sis_event_entry .byline {
 
 .post-img-big-overlay {
   position: absolute;
-  background: url(../images/dot.png) repeat;
+  background: #efefef;
   z-index: 20;
   top: 0;
   left: 0;
@@ -2494,6 +2503,44 @@ li.sis_event_entry h4, li.sis_event_entry .byline {
 .w-h-full {
   background-color: #fff;
   padding: 1em;
+}
+
+.history:before {
+  display: block;
+  height: 25%;
+  width: 0;
+  border-right: solid 5px #BB3939;
+  position: absolute;
+  margin: -56px;
+  z-index: 0;
+}
+
+.history-over {
+  margin: 0 auto;
+  position: relative;
+  float: none;
+}
+.history-over .hentry {
+  margin: 2em 0 10em;
+  background-color: #fdf6e3;
+  border-radius: 0;
+}
+.history-over p {
+  font-size: 1.2em;
+}
+
+.readmore-h {
+  float: left;
+  margin: 100px -77px 0;
+}
+
+.fixlocal {
+  width: 30px;
+  height: 30px;
+  background: #BB3939;
+  border-radius: 50%;
+  margin: 10% -68px;
+  position: fixed;
 }
 
 /*********************

@@ -90,10 +90,18 @@
 
 			</div>
 
-		<?php if ( is_front_page() ) : ?>
 
 
-		<?php else : ?>
+
+		<?php //if (is_archive( 'history' ) ) { ?>
+
+			
+
+		<?php if ( is_front_page() ) { ?>
+
+			 <?php putRevSlider("strose") ?>
+
+		<?php } else { ?>
 
 			<div class="subscriptions bchead m-all cf wow fadeIn">
 
@@ -106,7 +114,7 @@
 				    $image = get_template_directory_uri() . '/library/images/bg.png';
 				endif; 
 			?>
-			<div class="post-img-big-overlay"></div>
+			
 			<img class="post-img-big" src="<?php echo $image;?>" alt="">
 				<div class="wrap cf">
 
@@ -119,7 +127,4 @@
 
 			</div>
 
-		<?php endif; ?>
-
-
-
+		<?php } ?>

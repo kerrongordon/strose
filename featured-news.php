@@ -29,6 +29,7 @@
 		
 		
 			<article class="featured-post hentry">
+				<a href="<?php the_permalink(); ?>"></a>
 				<div class="post-img">									
 					<?php if ( has_post_thumbnail() ) {
 						the_post_thumbnail( 'bones-thumb-450' ); ?> 
