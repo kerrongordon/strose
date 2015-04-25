@@ -18,7 +18,9 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="history-over m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<h1 class="title-page">Our History</h1>
+
+						<main id="main" class="history-over m-3of4 t-2of3 d-4of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 						<div class="fixlocal"></div>
 
@@ -38,7 +40,7 @@
 							<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 							
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'wow fadeIn cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
 
 								<div class="post-img">									
 									
@@ -47,11 +49,9 @@
 									
 								</div>
 
-								<header class="article-header">
-	
-									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-									<p class="byline entry-meta vcard">
-                                        				<?php printf( __( 'Posted %1$s by %2$s', 'strose' ),
+																	
+									<p class="byline entry-meta vcard date-card wow zoomIn">
+                                        				<?php printf( __( 'On %1$s', 'strose' ),
                        								/* the time the post was published */
                        								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
                        								/* the author of the post */
@@ -59,15 +59,10 @@
                     							); ?>
 									</p>
 
-								</header>
 
 								<section class="entry-content cf">
 									<?php the_content(); ?>
 								</section>
-
-								<footer class="article-footer cf">
-									
-								</footer>
 
 							</article>
 

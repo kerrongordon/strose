@@ -60,7 +60,7 @@
 
 		<?php	}
 		} else { ?>
-			<h1 class="">No Featured News Found</h1>
+			<h1 class="aligncenter">No Featured News Found</h1>
 		<?php }
 
 		// Restore original Post Data

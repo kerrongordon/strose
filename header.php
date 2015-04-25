@@ -42,7 +42,7 @@
 
 	</head>
 
-	<body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
+	<body <?php body_class(); ?>>
 
 		<div id="container">
 
@@ -93,13 +93,13 @@
 
 
 
-		<?php //if (is_archive( 'history' ) ) { ?>
+		<?php if (is_archive( 'history' ) ) { ?>
 
 			
 
-		<?php if ( is_front_page() ) { ?>
+		<?php } elseif ( is_front_page() ) { ?>
 
-			 <?php putRevSlider("strose") ?>
+			 <?php //putRevSlider("strose") ?>
 
 		<?php } else { ?>
 
