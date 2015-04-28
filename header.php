@@ -99,7 +99,7 @@
 
 		<?php } elseif ( is_front_page() ) { ?>
 
-			 <?php //putRevSlider("strose") ?>
+			 <?php putRevSlider("strose") ?>
 
 		<?php } else { ?>
 

@@ -54,6 +54,6 @@
 		</div>
 
 		<?php include 'upcoming-events.php'; ?>	
-<div class="fimg"></div>
+<!--<div class="fimg"></div>-->
 
 <?php get_footer(); ?>

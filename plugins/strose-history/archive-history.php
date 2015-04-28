@@ -60,7 +60,7 @@
 									</p>
 
 
-								<section class="entry-content cf">
+								<section class="entry-content cf wow zoomIn">
 									<?php the_content(); ?>
 								</section>
 
