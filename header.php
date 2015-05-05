@@ -93,8 +93,7 @@
 
 
 
-		<?php if (is_archive( 'history' ) ) { ?>
-
+		<?php if (is_archive( 'history' ) or 'gallery' == get_post_format() or 'video' == get_post_format()) { ?>
 			
 
 		<?php } elseif ( is_front_page() ) { ?>

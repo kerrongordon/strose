@@ -4,19 +4,7 @@
 
 				<div id="inner-content" class="wrap cf">
 
-					<main id="main" 
-
-						<?php if ( 'gallery' == get_post_format() or 'video' == get_post_format() ) { ?>
-							
-							class="m-all t-all d-all cf " 
-
-						<?php } else { ?>
-
-							class="m-all t-2of3 d-5of7 cf " 
-
-						<?php } ?>
-
-						role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<main id="main" class="m-all t-all d-all cf " role="main" itemscope itemprop="mainContentOfPage" >
 											
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -34,15 +22,8 @@
 								 * If you want to remove post formats, just delete the post-formats folder and
 								 * replace the function below with the contents of the "format.php" file.
 								*/
-								if ( 'gallery' == get_post_format() or 'video' == get_post_format() ) {
-
-									get_template_part( 'post-formats/format', get_post_format() );
-
-								} else {
-
-									include 'post-formats/format.php';
-
-								}
+								
+								include 'post-formats/format-gallery.php'; 
 
 							?>
 
@@ -66,18 +47,6 @@
 
 					</main>
 
-					<?php 
-
-						if ( 'gallery' == get_post_format() or 'video' == get_post_format() ) {
-
-							
-						    
-						} else {
-
-							get_sidebar();
-						}
-
-					?>			
 
 				</div>
 

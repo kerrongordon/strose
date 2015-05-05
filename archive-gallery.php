@@ -4,13 +4,13 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+					<h1 class="title-page" itemprop="name"><?php echo 'Gallery'; ?></h1> 
 
-							
+						<main id="main" class="m-all t-all d-all cf df" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" class="gallery-archive cf" role="article">
 
 								<header class="entry-header article-header">
 
@@ -28,9 +28,11 @@
 
 								<section class="entry-content cf">
 
-									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+									<?php //the_post_thumbnail( 'bones-thumb-300' ); ?>
 
-									<?php the_excerpt(); ?>
+									<a class="covercontent" href="<?php the_permalink() ?>"></a>
+
+									<?php the_content( ); ?>
 
 								</section>
 

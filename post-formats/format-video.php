@@ -1,10 +1,10 @@
 
 
-              <article id="post-<?php the_ID(); ?>" <?php post_class('cf wow fadeInUp'); ?> role="article" itemscope itemtype="http://schema.org/VideoObject">
+              <article id="post-<?php the_ID(); ?>" class="cf" role="article" itemscope itemtype="http://schema.org/VideoObject">
 
                 <header class="article-header entry-header">
 
-                  <h1 class="entry-title single-title" itemprop="name"><?php the_title(); ?></h1>
+                  <h1 class="title-page" itemprop="name"><?php the_title(); ?></h1>
 
                   <p class="byline entry-meta vcard">
                     <?php printf( __( 'Posted %1$s by %2$s', 'strose' ),
@@ -17,7 +17,7 @@
 
                 </header> <?php // end article header ?>
 
-                <section class="entry-content cf video-post" itemprop="description">
+                <section class="entry-content cf video-post d-5of7" itemprop="description">
                   <?php
                     // the content (pretty self explanatory huh)
                     the_content();
