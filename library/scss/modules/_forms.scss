@@ -45,16 +45,16 @@ textarea,
   margin-bottom: 14px;
   font-size: 1em;
   color: $text-color;
-  border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
   width: 100%;
   max-width: 400px;
   font-family: $lato;
-  background-color: #DADADA;
+  background-color: #fff;
   @include transition(background-color 0.24s ease-in-out);
   transition: all .25s ease;
+  border: solid 1px #e5e5e5;
 
   // a focused input (or hovered on)
   &:focus,

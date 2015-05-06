@@ -146,7 +146,7 @@ jQuery(document).ready(function($) {
     });
 
   $('.mobile-menu').click(function() {
-      headerBar.toggleClass('mobile-menuon animated slideInDown');
+      headerBar.toggleClass('mobile-menuon');
   });  
 
   $('.featured-post').click(function(){

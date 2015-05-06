@@ -21,11 +21,11 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all blog-over t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-2of3 d-5of7 aligncenter cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('wow fadeInUp cf'); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class('cf'); ?> role="article">
 
 								<header class="article-header">
 
@@ -97,7 +97,7 @@
 
 						</main>
 
-						<?php get_sidebar(); ?>
+						<?php //get_sidebar(); ?>
 
 				</div>
 

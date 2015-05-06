@@ -17,7 +17,7 @@
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="theme-color" content="#3f51b5">
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
@@ -48,7 +48,7 @@
 
 			<div class="navontop">
 
-			<header class="header wow slideInDown" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<header class="header animated slideInDown" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="wrap cf">
 					
@@ -59,11 +59,6 @@
 						<?php // if you'd like to use the site description you can un-comment it below ?>
 						<span class="description"><?php bloginfo('description'); ?></span>
 						
-						<div class="mobile-menu">
-							<span class="bar"></span>
-							<span class="bar"></span>
-							<span class="bar"></span>
-						</div>
 
 						<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 							<?php wp_nav_menu(array(
@@ -92,38 +87,18 @@
 
 
 
-
-		<?php if (is_archive( 'history' ) or 'gallery' == get_post_format() or 'video' == get_post_format()) { ?>
-			
-
-		<?php } elseif ( is_front_page() ) { ?>
+		<?php if ( is_front_page() ) { ?>
 
 			 <?php putRevSlider("strose") ?>
 
 		<?php } else { ?>
+			<div class="bread-crumb">
 
-			<div class="subscriptions bchead m-all cf wow fadeIn">
-
-			<?php 
-				$page_id = get_queried_object_id();
-				if ( has_post_thumbnail( $page_id ) ) :
-				    $image_array = wp_get_attachment_image_src( get_post_thumbnail_id( $page_id ), 'bones-thumb-700' );
-				    $image = $image_array[0];
-				else :
-				    $image = get_template_directory_uri() . '/library/images/bg.png';
-				endif; 
-			?>
-			
-			<img class="post-img-big" src="<?php echo $image;?>" alt="">
 				<div class="wrap cf">
 
-					<!--<div class="breadcrumbs cf wow slideInDown" xmlns:v="http://rdf.data-vocabulary.org/#">
-					    <?php //if(function_exists('bcn_display'))
-					    //echo '<span class="youhere">You are here: </span>'; echo '<div class="breadlist">'; { bcn_display(); } echo '</div>'; ?>
-					</div>-->
+					<?php if ( function_exists( 'bread_crumb' ) ) bread_crumb( 'type=string' ); ?>
 
 				</div>
 
 			</div>
-
 		<?php } ?>

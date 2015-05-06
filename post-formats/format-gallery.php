@@ -4,7 +4,7 @@
 
                 <header class="article-header">
 
-                  <h1 class="title-page" itemprop="headline"><?php the_title(); ?></h1>
+                  <!--<h1 class="title-page" itemprop="headline"><?php //the_title(); ?></h1>-->
 
                 </header> <?php // end article header ?>
 

@@ -16,7 +16,7 @@
 
 						<?php } ?>
 
-						role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						role="main" itemscope itemprop="mainContentOfPage" >
 											
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

@@ -118,7 +118,9 @@ NAVIGATION STYLES
 			li.current-menu-item,
 			li.current_page_item,
 			li.current_page_ancestor {
-				a {}
+				a {
+					box-shadow: 0 7px 0 -5px #fff;
+				}
 			}
 		}
 
@@ -134,7 +136,9 @@ NAVIGATION STYLES
 	li.current-menu-item,
 	li.current_page_item,
 	li.current_page_ancestor {
-		a {}
+		a {
+			box-shadow: 0 7px 0 -5px #fff;
+		}
 	}  /* end current highlighters */
 
 } /* end .nav */
@@ -269,8 +273,8 @@ SIDEBARS & ASIDES
 
 #sidebar1{
 	.widget {
-		float: left;
-		margin: 2em;
+		//float: left;
+		margin: 2em auto;
 		width: 92.7%;
   		display: block;
 	}
@@ -339,10 +343,6 @@ HOME PAGE
 	}
 }
 
-.fimg {
-	background-image: url(../images/strose-all-cuts.png);
-	background-size: inherit;
-}
 
 
 .logo-img {
@@ -357,11 +357,6 @@ HOME PAGE
 
 .navontop {
 	height: 100px;
-}
-
-.blog-over {
-	margin: -150px auto 0;
-	float: none;
 }
 
 .subscriptions {
@@ -379,9 +374,7 @@ HOME PAGE
 	}
 }
 
-.mobile-menu {
-	display: none;
-}
+
 
 #inner-footer {
 

@@ -18,8 +18,6 @@
 
 				<div id="inner-content" class="wrap cf">
 
-					<h1 class="title-page">Our History</h1>
-
 						<main id="main" class="history-over m-3of4 t-2of3 d-4of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 						<div class="fixlocal"></div>

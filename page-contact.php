@@ -21,10 +21,10 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf blog-over" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-2of3 d-5of7 aligncenter cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 						
-							<div class="hentry wow fadeInUp">
-								<?php echo do_shortcode( '[contact-form-7 id="302" title="contact"]' ); ?>
+							<div class="wow fadeInLeft">
+								<?php echo do_shortcode( '[contact-form-7 id="165" title="Contact form 1"]' ); ?>
 
 							</div>
 

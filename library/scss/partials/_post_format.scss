@@ -65,10 +65,13 @@
 	width: 375px;
 	text-align: center;
 	position: relative;
+	padding: 2em 0;
 
 	.gallery-item:nth-child(1) {
 		position: relative;
 		transform: rotate(10deg);
+		margin: 0 auto;
+  		float: none;
 	}
 
 	.gallery-item:nth-last-child(5) {
@@ -100,7 +103,7 @@
 	}
 
 	img {
-		width: 270px;
+		width: 200px;
 	}
 }
 

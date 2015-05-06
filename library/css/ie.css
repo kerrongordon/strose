@@ -350,9 +350,22 @@ NAVIGATION STYLES
   top: 0;
   left: 100%;
 }
+.nav li ul.sub-menu li.current-menu-item a,
+.nav li ul.sub-menu li.current_page_item a,
+.nav li ul.sub-menu li.current_page_ancestor a,
+.nav li ul.children li.current-menu-item a,
+.nav li ul.children li.current_page_item a,
+.nav li ul.children li.current_page_ancestor a {
+  box-shadow: 0 7px 0 -5px #fff;
+}
 .nav li:hover > ul {
   top: auto;
   visibility: visible;
+}
+.nav li.current-menu-item a,
+.nav li.current_page_item a,
+.nav li.current_page_ancestor a {
+  box-shadow: 0 7px 0 -5px #fff;
 }
 
 /* end .nav */
@@ -394,8 +407,7 @@ SIDEBARS & ASIDES
 /* search widget */
 /* text widget */
 #sidebar1 .widget {
-  float: left;
-  margin: 2em;
+  margin: 2em auto;
   width: 92.7%;
   display: block;
 }
@@ -443,11 +455,6 @@ HOME PAGE
   display: block;
 }
 
-.fimg {
-  background-image: url(../images/strose-all-cuts.png);
-  background-size: inherit;
-}
-
 .logo-img {
   float: left;
 }
@@ -460,11 +467,6 @@ HOME PAGE
   height: 100px;
 }
 
-.blog-over {
-  margin: -150px auto 0;
-  float: none;
-}
-
 .subscriptions {
   height: 300px;
 }
@@ -472,10 +474,6 @@ HOME PAGE
 .menuTop #inner-header #logo {
   font-size: 1.2em;
   margin: 0;
-}
-
-.mobile-menu {
-  display: none;
 }
 
 #inner-footer nav {
@@ -517,14 +515,6 @@ be seen on the Desktop.
   padding-left: 15px;
   display: none;
   float: left;
-}
-
-.bchead {
-  height: 400px;
-}
-
-.blog-over {
-  margin: -300px auto 0;
 }
 
 /*

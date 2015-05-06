@@ -4,9 +4,7 @@
 
 				<div id="inner-content" class="wrap cf">
 
-					<h1 class="title-page" itemprop="name"><?php echo 'Gallery'; ?></h1> 
-
-						<main id="main" class="m-all t-all d-all cf df" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="m-all t-all d-all cf df" role="main" itemscope itemprop="mainContentOfPage" >
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -20,7 +18,7 @@
                   							     /* the time the post was published */
                   							     '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
                        								/* the author of the post */
-                       								'<span class="by">by</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
+                       								'<span class="by">by</span> <span class="entry-author author" itemprop="author" itemscope >' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
                     							); ?>
 									</p>
 
@@ -44,7 +42,7 @@
 
 							<?php endwhile; ?>
 
-									<?php bones_page_navi(); ?>
+									
 
 							<?php else : ?>
 
@@ -63,6 +61,8 @@
 							<?php endif; ?>
 
 						</main>
+
+						<?php bones_page_navi(); ?>
 
 					<?php //get_sidebar(); ?>
 

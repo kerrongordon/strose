@@ -66,6 +66,34 @@ function bones_ahoy() {
 add_action( 'after_setup_theme', 'bones_ahoy' );
 
 
+
+add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
+  
+  function add_current_nav_class($classes, $item) {
+    
+    // Getting the current post details
+    global $post;
+    
+    // Getting the post type of the current post
+    $current_post_type = get_post_type_object(get_post_type($post->ID));
+    $current_post_type_slug = $current_post_type->rewrite[slug];
+      
+    // Getting the URL of the menu item
+    $menu_slug = strtolower(trim($item->url));
+    
+    // If the menu item URL contains the current post types slug add the current-menu-item class
+    if (strpos($menu_slug,$current_post_type_slug) !== false) {
+    
+       $classes[] = 'current-menu-item';
+    
+    }
+    
+    // Return the corrected set of classes to be added to the menu item
+    return $classes;
+  
+  }
+
+
 /************* OEMBED SIZE OPTIONS *************/
 
 if ( ! isset( $content_width ) ) {
@@ -236,7 +264,7 @@ function bones_register_sidebars() {
     'description' => __( 'The footer-bar sidebar.', 'strose' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget' => '</div>',
-    'before_title' => '<h2 class="">&#8220',
+    'before_title' => '<h2 class="wow zoomIn">&#8220',
     'after_title' => '&#8221</h2>',
   ));
 

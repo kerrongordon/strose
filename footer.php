@@ -1,4 +1,5 @@
 	<?php get_sidebar( "dailymessage" ); ?>
+	
 		<?php get_sidebar('footerbar'); ?>
 
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">

@@ -269,10 +269,9 @@ POSTS & CONTENT STYLES
 		
 		.hentry {
 			background-color: $white;
-			border-radius: 3px;
 			margin-bottom: 1.5em;
-			//border: solid 1px $border-color;
-			box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
+			border: solid 1px #e5e5e5;
+			//box-shadow: 0 1px 3px 0 rgba(0,0,0,0.4);
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -878,7 +877,7 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: $black;
+	background-color: $footerbar-color;
 	color: $light-gray;
 	position: relative;
 	z-index: 10;
@@ -938,35 +937,8 @@ HOME PAGE
 	background-size: cover;
 }
 
-/**********************
-subscriptions
-**********************/
 
-.subscriptions {
-	background-color: $subscriptions-color;
-	color: $subscriptions-font-color;
-	text-align: center;
-	overflow: hidden;
-    position: relative;
-    display: block;
-    height: 150px;
 
-	h2 {
-		font-weight: 400;
-		font-family: "Satisfy";
-		font-size: 2em;
-	}
-}
-
-/**********************
-blog
-**********************/
-
-.blog-over {
-	margin: -100px auto 0;
-	position: relative;
-	z-index: 5;
-}
 
 /*******************
 contact form 7
@@ -992,7 +964,6 @@ contact form 7
 		max-width: 100%;
 		width: 100%;
 		height: auto;
-		border-radius: 3px 3px 0 0;
 	}
 }
 
@@ -1094,49 +1065,6 @@ contact form 7
 	float: right;
 }
 
-.mobile-menuon {
-
-		
-	#inner-header nav {
-		display: block;
-		margin: 0;
-		float: none;		
-
-		li {
-			width: 50%;
-			float: left;
-
-			a {
-			    background: rgba(215, 218, 250, 0.41);
-			    margin: 1em 1em;
-			}
-
-		.sub-menu {
-			display: none;
-		}
-
-
-		}
-	}
-
-	.top-nav {
-		float: none;
-  		width: 100%;
-  		text-align: center;
-	}
-
-	.menuform {
-		float: none;
-	}
-
-	input[type="search"], .menuSeach {
-		width: 100%;
-  		margin: 9px auto;
-	}
-
-}
-
-
 
 
 input[type="search"], .menuSeach {
@@ -1189,7 +1117,8 @@ input[type="search"], .menuSeach {
 }
 
 .subscription {
-  background-color: $red;
+  background-color: $footerbar-color;
+  background: url(../images/bread-crumb.jpg) 50% 50%/cover;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -1244,7 +1173,9 @@ input[type="search"], .menuSeach {
 }
 
 .sub-h-full {
-	background-color: $footerbar-color;
+	background-color: #f9f9f9;
+  	border-top: solid 1px #e5e5e5;
+  	border-bottom: solid 1px #e5e5e5;
 
 	.fea-news-title {
 		text-align: center;
@@ -1262,8 +1193,9 @@ article.featured-post {
   transition: all 0.25s ease-in-out;
 
   &:hover {
-  	box-shadow: 0 20px 60px 5px rgba(0, 0, 0, 0.5);
+  	box-shadow: 0 20px 0 -15px;
   	cursor: pointer;
+  	background: #FDFDFD;
   }
 
   .readmore {
@@ -1390,4 +1322,45 @@ li.sis_event_entry {
 	font-family: "Satisfy";
 	padding: 0 0 1em 0;
 	border-bottom: solid 1px rgba(0, 0, 0, 0.11);
+}
+
+.bread-crumb {
+	height: 150px;
+	background: url(../images/bread-crumb.jpg) 50% 50%/cover;
+	color: #fff;
+	font-size: 1.5em;
+
+	.wrap {
+		line-height: 7.2em;
+	}
+}
+
+
+.bread_crumb {
+    margin:0;
+    border-bottom:1px solid #eee;
+    padding:0.8em 0 0.5em;
+    clear: both;
+    height: 20px;
+    background: #f8f8f8;
+}
+.bread_crumb li {
+    font-size:12px;
+    color:rgb(180,180,180);
+    float:left;
+    /*margin-right:1em;*/
+    list-style: none outside none;
+}
+.bread_crumb li:after {
+    content : '>';
+    padding-left:10px;
+    margin-right:10px;
+}
+.bread_crumb li:last-child:after {
+    content : '';
+}
+.bread_crumb li a {
+    color:rgb(120,120,120);
+}
+.bread_crumb li.current {
 }

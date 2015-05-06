@@ -959,6 +959,7 @@ them however you see fit.
   clear: both;
   display: block;
   margin: 7px auto;
+  float: none;
 }
 
 /**
@@ -1048,10 +1049,13 @@ them however you see fit.
   width: 375px;
   text-align: center;
   position: relative;
+  padding: 2em 0;
 }
 .gallery-archive .gallery-item:nth-child(1) {
   position: relative;
   transform: rotate(10deg);
+  margin: 0 auto;
+  float: none;
 }
 .gallery-archive .gallery-item:nth-last-child(5) {
   transform: rotate(30deg);
@@ -1076,7 +1080,7 @@ them however you see fit.
   top: 60px;
 }
 .gallery-archive img {
-  width: 270px;
+  width: 200px;
 }
 
 .covercontent {
@@ -1289,17 +1293,17 @@ textarea,
   margin-bottom: 14px;
   font-size: 1em;
   color: #5c6b80;
-  border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
   width: 100%;
   max-width: 400px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #DADADA;
+  background-color: #fff;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out;
   transition: all .25s ease;
+  border: solid 1px #e5e5e5;
 }
 input[type="text"]:focus, input[type="text"]:active,
 input[type="password"]:focus,
@@ -1574,7 +1578,7 @@ input[type="search"]:active,
 }
 
 .footerbar {
-  background-color: #34495e;
+  background-color: #151A20;
   width: 100%;
   color: #ccc;
   position: relative;
@@ -1835,9 +1839,8 @@ POSTS & CONTENT STYLES
 
 .hentry {
   background-color: #fff;
-  border-radius: 3px;
   margin-bottom: 1.5em;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  border: solid 1px #e5e5e5;
 }
 .hentry header {
   border-bottom: 1px solid #f8f9fa;
@@ -2234,7 +2237,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
+  background-color: #151A20;
   color: #f8f9fa;
   position: relative;
   z-index: 10;
@@ -2274,33 +2277,6 @@ HOME PAGE
   background-size: cover;
 }
 
-/**********************
-subscriptions
-**********************/
-.subscriptions {
-  background-color: #03A9F4;
-  color: #fff;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  display: block;
-  height: 150px;
-}
-.subscriptions h2 {
-  font-weight: 400;
-  font-family: "Satisfy";
-  font-size: 2em;
-}
-
-/**********************
-blog
-**********************/
-.blog-over {
-  margin: -100px auto 0;
-  position: relative;
-  z-index: 5;
-}
-
 /*******************
 contact form 7
 *******************/
@@ -2315,7 +2291,6 @@ contact form 7
   max-width: 100%;
   width: 100%;
   height: auto;
-  border-radius: 3px 3px 0 0;
 }
 
 .logo-img {
@@ -2408,35 +2383,6 @@ contact form 7
   float: right;
 }
 
-.mobile-menuon #inner-header nav {
-  display: block;
-  margin: 0;
-  float: none;
-}
-.mobile-menuon #inner-header nav li {
-  width: 50%;
-  float: left;
-}
-.mobile-menuon #inner-header nav li a {
-  background: rgba(215, 218, 250, 0.41);
-  margin: 1em 1em;
-}
-.mobile-menuon #inner-header nav li .sub-menu {
-  display: none;
-}
-.mobile-menuon .top-nav {
-  float: none;
-  width: 100%;
-  text-align: center;
-}
-.mobile-menuon .menuform {
-  float: none;
-}
-.mobile-menuon input[type="search"], .mobile-menuon .menuSeach {
-  width: 100%;
-  margin: 9px auto;
-}
-
 input[type="search"]::-webkit-input-placeholder, .menuSeach::-webkit-input-placeholder {
   color: #fff;
   transition: all 0.25s ease-in-out;
@@ -2502,7 +2448,8 @@ input[type="search"]:focus:-ms-input-placeholder, .menuSeach:focus:-ms-input-pla
 }
 
 .subscription {
-  background-color: #BB3939;
+  background-color: #151A20;
+  background: url(../images/bread-crumb.jpg) 50% 50%/cover;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -2549,7 +2496,9 @@ input[type="search"]:focus:-ms-input-placeholder, .menuSeach:focus:-ms-input-pla
 }
 
 .sub-h-full {
-  background-color: #34495e;
+  background-color: #f9f9f9;
+  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;
 }
 .sub-h-full .fea-news-title {
   text-align: center;
@@ -2566,8 +2515,9 @@ article.featured-post {
   transition: all 0.25s ease-in-out;
 }
 article.featured-post:hover {
-  box-shadow: 0 20px 60px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 0 -15px;
   cursor: pointer;
+  background: #FDFDFD;
 }
 article.featured-post .readmore, article.featured-post .readmore-h {
   padding: 1em;
@@ -2675,6 +2625,47 @@ li.sis_event_entry h4, li.sis_event_entry .byline {
   font-family: "Satisfy";
   padding: 0 0 1em 0;
   border-bottom: solid 1px rgba(0, 0, 0, 0.11);
+}
+
+.bread-crumb {
+  height: 150px;
+  background: url(../images/bread-crumb.jpg) 50% 50%/cover;
+  color: #fff;
+  font-size: 1.5em;
+}
+.bread-crumb .wrap {
+  line-height: 7.2em;
+}
+
+.bread_crumb {
+  margin: 0;
+  border-bottom: 1px solid #eee;
+  padding: 0.8em 0 0.5em;
+  clear: both;
+  height: 20px;
+  background: #f8f8f8;
+}
+
+.bread_crumb li {
+  font-size: 12px;
+  color: #b4b4b4;
+  float: left;
+  /*margin-right:1em;*/
+  list-style: none outside none;
+}
+
+.bread_crumb li:after {
+  content: '>';
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.bread_crumb li:last-child:after {
+  content: '';
+}
+
+.bread_crumb li a {
+  color: #787878;
 }
 
 /*********************
@@ -2879,9 +2870,22 @@ you can add resource intensive styles.
     top: 0;
     left: 100%;
   }
+  .nav li ul.sub-menu li.current-menu-item a,
+  .nav li ul.sub-menu li.current_page_item a,
+  .nav li ul.sub-menu li.current_page_ancestor a,
+  .nav li ul.children li.current-menu-item a,
+  .nav li ul.children li.current_page_item a,
+  .nav li ul.children li.current_page_ancestor a {
+    box-shadow: 0 7px 0 -5px #fff;
+  }
   .nav li:hover > ul {
     top: auto;
     visibility: visible;
+  }
+  .nav li.current-menu-item a,
+  .nav li.current_page_item a,
+  .nav li.current_page_ancestor a {
+    box-shadow: 0 7px 0 -5px #fff;
   }
 
   /* end .nav */
@@ -2923,8 +2927,7 @@ you can add resource intensive styles.
   /* search widget */
   /* text widget */
   #sidebar1 .widget {
-    float: left;
-    margin: 2em;
+    margin: 2em auto;
     width: 92.7%;
     display: block;
   }
@@ -2972,11 +2975,6 @@ you can add resource intensive styles.
     display: block;
   }
 
-  .fimg {
-    background-image: url(../images/strose-all-cuts.png);
-    background-size: inherit;
-  }
-
   .logo-img {
     float: left;
   }
@@ -2989,11 +2987,6 @@ you can add resource intensive styles.
     height: 100px;
   }
 
-  .blog-over {
-    margin: -150px auto 0;
-    float: none;
-  }
-
   .subscriptions {
     height: 300px;
   }
@@ -3001,10 +2994,6 @@ you can add resource intensive styles.
   .menuTop #inner-header #logo {
     font-size: 1.2em;
     margin: 0;
-  }
-
-  .mobile-menu {
-    display: none;
   }
 
   #inner-footer nav {
@@ -3054,14 +3043,6 @@ you can add resource intensive styles.
     display: none;
     float: left;
   }
-
-  .bchead {
-    height: 400px;
-  }
-
-  .blog-over {
-    margin: -300px auto 0;
-  }
 }
 /*********************
 LARGE VIEWING SIZE
@@ -3084,14 +3065,6 @@ This is for the larger monitors and possibly full screen viewers.
 
   .description {
     display: block;
-  }
-
-  .bchead {
-    height: 500px;
-  }
-
-  #sidebar1 .widget {
-    width: 45.334%;
   }
 
   article.featured-post {
