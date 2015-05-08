@@ -929,14 +929,6 @@ HOME PAGE
 	}
 }
 
-.fimg {
-	background-image: url(../images/strose-all-cuts-moble.png);
-	background-repeat: repeat-x;
-	height: 350px;
-	margin: 0 auto;
-	background-size: cover;
-}
-
 
 
 
@@ -1048,6 +1040,8 @@ contact form 7
 .navontop {
 	background-color: $m-blue;
 	height: 38px;
+	position: relative;
+  	z-index: 9999;
 }
 
 #inner-header #logo {
@@ -1118,7 +1112,7 @@ input[type="search"], .menuSeach {
 
 .subscription {
   background-color: $footerbar-color;
-  background: url(../images/bread-crumb.jpg) 50% 50%/cover;
+  background: url(../images/bread-crumb.jpg) 50% 60%/cover;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -1252,69 +1246,7 @@ li.sis_event_entry {
 	padding: 1em;
 }
 
-.history:before {
-  display: block;
-  height: 100%;
-  width: 0;
-  border-right: solid 5px $red;
-  position: absolute;
-  margin: -56px;
-  z-index: 0;
-}
 
-.history-over {
-	margin: 0 auto;
-	position: relative;
-	float: none;
-	padding: 5em 0;
-
-	.hentry {
-		margin: 2em 0 10em;
-		background-color: #fdf6e3;
-		border-radius: 0;
-	}
-
-	.entry-content p {
-		font-size: 1em
-	}
-}
-
-.readmore-h {
-	@extend .readmore;
-	float: left;
-	margin: 10% -77px 0;
-}
-
-.fixlocal {
-	width: 30px;
-	height: 30px;
-	background: $red;
-	border-radius: 50%;
-	margin: 7% -68px;
-	position: fixed;
-}
-
-
-.logged-in {
-
-	header.header {
-		position: relative;
-	}
-}
-
-.date-card {
-	background: $red;
-	position: absolute;
-	float: left;
-	margin: -60px -56px;
-	padding: 1em;
-	color: #fff;
-	
-
-	.entry-time {
-		
-	}
-}
 
 .title-page {
 	text-align: center;
@@ -1326,13 +1258,20 @@ li.sis_event_entry {
 
 .bread-crumb {
 	height: 150px;
-	background: url(../images/bread-crumb.jpg) 50% 50%/cover;
+	background: url(../images/bread-crumb.jpg) 50% 60%/cover;
 	color: #fff;
 	font-size: 1.5em;
+	z-index: 10;
+	position: relative;
 
 	.wrap {
 		line-height: 7.2em;
+
+		a {
+			color: #fff;
+		}
 	}
+
 }
 
 
@@ -1363,4 +1302,19 @@ li.sis_event_entry {
     color:rgb(120,120,120);
 }
 .bread_crumb li.current {
+}
+
+.fixlocal, .history-line, .post-img {
+	display: none;
+}
+
+.post-type-archive-history .type-history:nth-child(odd) {
+	margin-top: 0;
+}
+
+.logged-in {
+
+	.header {
+		margin-top: 31px;
+	}
 }

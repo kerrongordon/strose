@@ -1000,7 +1000,7 @@ them however you see fit.
 }
 .single-format-gallery .entry-content img {
   margin: 1em 2.8em;
-  box-shadow: 3px 3px 10px #000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
   transform: scale(1);
 }
@@ -1096,6 +1096,83 @@ them however you see fit.
 }
 .covercontent:hover {
   background: rgba(240, 248, 255, 0.1);
+}
+
+.post-type-archive-history {
+  background: #fdf6e3;
+}
+.post-type-archive-history #main {
+  position: relative;
+}
+.post-type-archive-history .entry-content p {
+  font-size: 15px;
+}
+.post-type-archive-history .type-history:nth-child(1) {
+  margin-top: 0;
+}
+.post-type-archive-history .type-history:nth-child(odd) {
+  float: right;
+  margin-top: 10em;
+}
+.post-type-archive-history .type-history:nth-child(odd) .post-img {
+  float: left;
+  margin: 25% -129px;
+  background: #fff;
+  position: relative;
+  width: 129px;
+  height: 5px;
+  text-align: left;
+  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;
+  border-left: solid 1px #e5e5e5;
+}
+.post-type-archive-history .type-history:nth-child(odd) .post-img span {
+  margin: -20px -10px;
+  font-size: 3em;
+}
+.post-type-archive-history .type-history:nth-child(even) {
+  float: left;
+  clear: both;
+}
+.post-type-archive-history .type-history:nth-child(even) .post-img {
+  float: right;
+  margin: 25% -146px;
+  background: #fff;
+  position: relative;
+  width: 136px;
+  height: 5px;
+  text-align: right;
+  border-top: solid 1px #e5e5e5;
+  border-bottom: solid 1px #e5e5e5;
+  border-right: solid 1px #e5e5e5;
+}
+.post-type-archive-history .type-history:nth-child(even) .post-img span {
+  margin: -20px 10px;
+  font-size: 3em;
+}
+.post-type-archive-history .fixlocal {
+  width: 50px;
+  height: 50px;
+  background: #BB3939;
+  border-radius: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+}
+.post-type-archive-history .history-line {
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  background: #BB3939;
+  z-index: 0;
+  left: 50%;
+}
+.post-type-archive-history .date-card {
+  position: relative;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 20px;
 }
 
 /*********************
@@ -2269,14 +2346,6 @@ HOME PAGE
   font-size: 14px;
 }
 
-.fimg {
-  background-image: url(../images/strose-all-cuts-moble.png);
-  background-repeat: repeat-x;
-  height: 350px;
-  margin: 0 auto;
-  background-size: cover;
-}
-
 /*******************
 contact form 7
 *******************/
@@ -2322,7 +2391,7 @@ contact form 7
   border: solid 1px #ccc;
 }
 
-.readmore, .readmore-h {
+.readmore {
   background-color: #3F51B5;
   position: relative;
   border-radius: 50%;
@@ -2331,7 +2400,7 @@ contact form 7
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   padding: 1em;
 }
-.readmore .dashicons, .readmore-h .dashicons {
+.readmore .dashicons {
   color: #fff;
   text-align: center;
   display: block;
@@ -2366,6 +2435,8 @@ contact form 7
 .navontop {
   background-color: #3F51B5;
   height: 38px;
+  position: relative;
+  z-index: 9999;
 }
 
 #inner-header #logo {
@@ -2449,7 +2520,7 @@ input[type="search"]:focus:-ms-input-placeholder, .menuSeach:focus:-ms-input-pla
 
 .subscription {
   background-color: #151A20;
-  background: url(../images/bread-crumb.jpg) 50% 50%/cover;
+  background: url(../images/bread-crumb.jpg) 50% 60%/cover;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -2519,7 +2590,7 @@ article.featured-post:hover {
   cursor: pointer;
   background: #FDFDFD;
 }
-article.featured-post .readmore, article.featured-post .readmore-h {
+article.featured-post .readmore {
   padding: 1em;
 }
 
@@ -2567,58 +2638,6 @@ li.sis_event_entry h4, li.sis_event_entry .byline {
   padding: 1em;
 }
 
-.history:before {
-  display: block;
-  height: 100%;
-  width: 0;
-  border-right: solid 5px #BB3939;
-  position: absolute;
-  margin: -56px;
-  z-index: 0;
-}
-
-.history-over {
-  margin: 0 auto;
-  position: relative;
-  float: none;
-  padding: 5em 0;
-}
-.history-over .hentry {
-  margin: 2em 0 10em;
-  background-color: #fdf6e3;
-  border-radius: 0;
-}
-.history-over .entry-content p {
-  font-size: 1em;
-}
-
-.readmore-h {
-  float: left;
-  margin: 10% -77px 0;
-}
-
-.fixlocal {
-  width: 30px;
-  height: 30px;
-  background: #BB3939;
-  border-radius: 50%;
-  margin: 7% -68px;
-  position: fixed;
-}
-
-.logged-in header.header {
-  position: relative;
-}
-
-.date-card {
-  background: #BB3939;
-  position: absolute;
-  float: left;
-  margin: -60px -56px;
-  padding: 1em;
-  color: #fff;
-}
-
 .title-page {
   text-align: center;
   font-size: 4.5em;
@@ -2629,12 +2648,17 @@ li.sis_event_entry h4, li.sis_event_entry .byline {
 
 .bread-crumb {
   height: 150px;
-  background: url(../images/bread-crumb.jpg) 50% 50%/cover;
+  background: url(../images/bread-crumb.jpg) 50% 60%/cover;
   color: #fff;
   font-size: 1.5em;
+  z-index: 10;
+  position: relative;
 }
 .bread-crumb .wrap {
   line-height: 7.2em;
+}
+.bread-crumb .wrap a {
+  color: #fff;
 }
 
 .bread_crumb {
@@ -2666,6 +2690,18 @@ li.sis_event_entry h4, li.sis_event_entry .byline {
 
 .bread_crumb li a {
   color: #787878;
+}
+
+.fixlocal, .history-line, .post-img {
+  display: none;
+}
+
+.post-type-archive-history .type-history:nth-child(odd) {
+  margin-top: 0;
+}
+
+.logged-in .header {
+  margin-top: 31px;
 }
 
 /*********************
@@ -3042,6 +3078,14 @@ you can add resource intensive styles.
     padding-left: 15px;
     display: none;
     float: left;
+  }
+
+  .fixlocal, .history-line, .post-img {
+    display: block;
+  }
+
+  .post-type-archive-history .type-history:nth-child(odd) {
+    margin-top: 10em;
   }
 }
 /*********************

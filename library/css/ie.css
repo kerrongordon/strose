@@ -517,6 +517,14 @@ be seen on the Desktop.
   float: left;
 }
 
+.fixlocal, .history-line, .post-img {
+  display: block;
+}
+
+.post-type-archive-history .type-history:nth-child(odd) {
+  margin-top: 10em;
+}
+
 /*
 you can call the larger styles if you want, but there's really no need
 */

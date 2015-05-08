@@ -32,4 +32,10 @@ be seen on the Desktop.
 }
 
 
+.fixlocal, .history-line, .post-img {
+	display: block;
+}
 
+.post-type-archive-history .type-history:nth-child(odd) {
+	margin-top: 10em;
+}

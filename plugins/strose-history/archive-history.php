@@ -18,9 +18,10 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="history-over m-3of4 t-2of3 d-4of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="history-over m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 						<div class="fixlocal"></div>
+						<div class="history-line"></div>
 
 							<?php
 							  // set up or arguments for our custom query
@@ -38,7 +39,7 @@
 							<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 							
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'd-2of5 wow rotateInUpLeft cf' ); ?> role="article">
 
 								<div class="post-img">									
 									
@@ -58,7 +59,7 @@
 									</p>
 
 
-								<section class="entry-content cf wow zoomIn">
+								<section class="entry-content cf">
 									<?php the_content(); ?>
 								</section>
 
